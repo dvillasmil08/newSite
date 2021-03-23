@@ -1,9 +1,17 @@
 import React from "react";
 
 // reactstrap components
-import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
+import { Button, 
+  Container, 
+  UncontrolledTooltip,
+  Row,
+  Col,
+  Carousel,
+  CarouselItem,
+  CarouselIndicators, } from "reactstrap";
 
 // core components
+import launcherImg from '../../assets/img/launcher.png'
 
 function Download() {
   return (
@@ -16,12 +24,9 @@ function Download() {
         <Container>
           <Row className="justify-content-md-center">
             <Col className="text-center" lg="8" md="12">
-              <h3 className="title">Do you love this Bootstrap 4 UI Kit?</h3>
+              <h3 className="title">Get ready to ride in saints crossing</h3>
               <h5 className="description">
-                Cause if you do, it can be yours for FREE. Hit the button below
-                to navigate to Creative Tim or Invision where you can find the
-                kit in HTML or Sketch/PSD format. Start a new project or give an
-                old Bootstrap project a new look!
+              WildRP is a premiere roleplay community. We aim to bring an atmosphere of high quality roleplay that encourages in-depth character development while providing a wide range of features and constant updates.
               </h5>
             </Col>
             <Col className="text-center" lg="8" md="12">
@@ -32,51 +37,53 @@ function Download() {
                 role="button"
                 size="lg"
               >
-                Download React
-              </Button>
-              <Button
-                className="btn-round"
-                color="primary"
-                href="https://www.invisionapp.com/now?ref=creativetim"
-                outline
-                role="button"
-                size="lg"
-                target="_blank"
-              >
-                Download PSD/Sketch
+                Allowlist Application
               </Button>
             </Col>
+          </Row>
+          <Row className="justify-content-md-center">
+              <a href="https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe" target="_blank" rel="noopener noreferrer">
+                <img
+                  alt="..."
+                  className="img-raised"
+                  src={require('../../assets/img/launcher.png')}
+                ></img>
+              </a>
+              
+              <Col className="text-center" lg="8" md="12">
+              <h5 className="description">
+              Our windows launcher is required to play WildRP. If the above image does not work you can use our <a href='https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe' style={{color:'#e4b85d', textDecoration:'none'}}
+              > alternative download link.</a></h5>
+            </Col>
+            
           </Row>
           <br></br>
           <br></br>
           <br></br>
           <Row className="text-center mt-5">
             <Col className="ml-auto mr-auto" md="8">
-              <h2>Want more?</h2>
+              <h2>Discord</h2>
               <h5 className="description">
-                We're going to launch{" "}
-                <a
-                  href="http://demos.creative-tim.com/now-ui-kit-pro-react/#/presentation?ref=nukr-index-page"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  Now UI Kit PRO React
-                </a>
-                . It will have huge number of components, sections and example
-                pages so you can start your development with a badass Bootstrap
-                4 UI Kit.
+                We organize our community primarily via Discord. All announcements, application status updates, developer previews, and other general communication can be found there.  
               </h5>
             </Col>
             <Col md="12">
-              <Button
-                className="btn-neutral btn-round"
-                color="default"
-                href="http://demos.creative-tim.com/now-ui-kit-pro-react/#/presentation?ref=nukr-index-page"
+            <Button
+                className="btn-round mr-1"
+                color="info"
+                href="https://www.creative-tim.com/product/now-ui-kit-react?ref=nukr-index-page"
+                role="button"
                 size="lg"
-                disabled
               >
-                <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
-                Upgrade to PRO
+                Launch Discord
               </Button>
+            </Col>
+          </Row>
+          <Row className="text-center mt-5">
+            <Col md="12">
+            <h6 className="description">
+            IF YOU ARE NOT ON THE WILDRP DISCORD AT THE TIME OF YOUR APPLICATION SUBMISSION, YOUR APPLICATION WILL BE AUTOMATICALLY DENIED. DUE TO THE CURRENT VOLUME OF APPLICATIONS WILDRP IS CURRENTLY ONLY HANDLING APPLICATION COMMUNICATION VIA DISCORD.
+              </h6>
             </Col>
           </Row>
           <br></br>
@@ -101,42 +108,29 @@ function Download() {
               </UncontrolledTooltip>
               <Button
                 className="btn-neutral btn-icon btn-round"
-                color="facebook"
+                color="youtube"
                 href="https://www.facebook.com/creativetim?ref=creativetim"
                 id="tooltip735272548"
                 size="lg"
                 target="_blank"
               >
-                <i className="fab fa-facebook-square"></i>
+                <i className="fab fa-youtube-square"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip735272548">
-                Like us
+                Like & Subscribe
               </UncontrolledTooltip>
               <Button
                 className="btn-neutral btn-icon btn-round"
-                color="linkedin"
+                color="facebook"
                 href="https://www.linkedin.com/company-beta/9430489/?ref=creativetim"
                 id="tooltip647117716"
                 size="lg"
                 target="_blank"
               >
-                <i className="fab fa-linkedin"></i>
+                <i className="fab fa-discord"></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip647117716">
-                Follow us
-              </UncontrolledTooltip>
-              <Button
-                className="btn-neutral btn-icon btn-round"
-                color="github"
-                href="https://github.com/creativetimofficial/now-ui-kit-react?ref=creativetim"
-                id="tooltip331904895"
-                size="lg"
-                target="_blank"
-              >
-                <i className="fab fa-github"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip331904895">
-                Star on Github
+                Join us
               </UncontrolledTooltip>
             </Col>
           </Row>
