@@ -28,6 +28,8 @@ import "assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
 import Index from "views/Index.js";
 import Allowlist from "views/forms/Allowlist";
 import Bugreport from "views/forms/Bugreport";
+import Reportplayer from "views/forms/Reportplayer";
+
 
 
 
@@ -39,15 +41,15 @@ ReactDOM.render(
         <Switch>
             <Route exact path="/" component={Index} />
         
+            <Route exact path="/bug" component={Bugreport} />
+            <Route exact path="/report" component={Reportplayer} />
             <Route exact path="/allowlist" component={Allowlist} />
 
             {/* <Route exact path="/privacy" component={Privacy} /> */}
 
             {/* <Route exact path="/rules" component={Rules} /> */}
             
-            {/* <Route exact path="/report" component={Reportplayer} /> */}
 
-            <Route exact path="/bug" component={Bugreport} />
            
             {/* <Route exact path="/appeal" component={Banappeal} /> */}
             
