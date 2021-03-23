@@ -31,6 +31,7 @@ import Bugreport from "views/forms/Bugreport";
 import Reportplayer from "views/forms/Reportplayer";
 import Banappeal from "views/forms/Banappeal";
 import Staff from "views/forms/Staff";
+import Devapp from "views/forms/Devapp";
 
 
 
@@ -51,6 +52,7 @@ ReactDOM.render(
             
             <Route exact path="/allowlist" component={Allowlist} />
             <Route exact path="/staff" component={Staff} />
+            <Route exact path="/developer" component={Devapp} />
 
             {/* <Route exact path="/privacy" component={Privacy} /> */}
 
@@ -60,7 +62,6 @@ ReactDOM.render(
            
             
             
-            {/* <Route exact path="/developer" component={Devapp} /> */}
             
             {/* <Route exact path="/law" component={Lawapp} /> */}
            
