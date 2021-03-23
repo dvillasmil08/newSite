@@ -65,26 +65,36 @@ function ExamplesNavbar() {
               <span className="button-bar"></span>
             </DropdownToggle>
             <DropdownMenu aria-labelledby="navbarDropdown">
-              <DropdownItem header tag="a">
-                Dropdown header
-              </DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Action
-              </DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Another action
-              </DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Something else here
+              <DropdownItem 
+              header tag='a' 
+              // href='https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe'
+              style={{color:'#e4b85d', textDecoration:'none'}}
+              >DOWNLOAD LAUNCHER
               </DropdownItem>
               <DropdownItem divider></DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                Separated link
-              </DropdownItem>
+                          
+              <DropdownItem tag='a' href='/bugs'>Bug Report</DropdownItem>
+              <DropdownItem tag='a' href='/report'>Report Player</DropdownItem>
+              <DropdownItem tag='a' href='/appeal'>Ban Appeal</DropdownItem>
+                          
               <DropdownItem divider></DropdownItem>
-              <DropdownItem href="#pablo" onClick={(e) => e.preventDefault()}>
-                One more separated link
-              </DropdownItem>
+                          
+              <DropdownItem tag='a' href='/allowlist'>Allowlist</DropdownItem>
+              <DropdownItem tag='a' href='/staff'>Staff</DropdownItem>
+              <DropdownItem tag='a' href='/developer'>Developer</DropdownItem>
+              <DropdownItem tag='a' href='/law'>Law Enforcement</DropdownItem>
+
+              <DropdownItem divider></DropdownItem>
+
+              <DropdownItem tag='a' href='/streamers'>Streamers</DropdownItem>
+              <DropdownItem tag='a' href='/branding'>Branding</DropdownItem>
+
+              <DropdownItem divider></DropdownItem>
+                          
+              <DropdownItem tag='a' href='/privacy'>Privacy Policy</DropdownItem>
+              <DropdownItem tag='a' href='/rules'>Rules</DropdownItem>
+              <DropdownItem tag='a' href='/Donate'>Donate</DropdownItem>
+              <DropdownItem tag='a' href='https://www.merchgardens.com/collections/WildRP'>Merchendise</DropdownItem>
             </DropdownMenu>
           </UncontrolledDropdown>
           <div className="navbar-translate">
@@ -93,10 +103,10 @@ function ExamplesNavbar() {
               target="_blank"
               id="navbar-brand"
             >
-              Now Ui Kit
+              WildRP
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
+              WildRP
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
@@ -118,16 +128,6 @@ function ExamplesNavbar() {
             navbar
           >
             <Nav navbar>
-              <NavItem>
-                <NavLink to="/index" tag={Link}>
-                  Back to Kit
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/creativetimofficial/now-ui-kit-react/issues?ref=creativetim">
-                  Have an issue?
-                </NavLink>
-              </NavItem>
               <NavItem>
                 <NavLink
                   href="https://twitter.com/CreativeTim?ref=creativetim"
