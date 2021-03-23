@@ -30,6 +30,8 @@ import Allowlist from "views/forms/Allowlist";
 import Bugreport from "views/forms/Bugreport";
 import Reportplayer from "views/forms/Reportplayer";
 import Banappeal from "views/forms/Banappeal";
+import Staff from "views/forms/Staff";
+
 
 
 
@@ -46,7 +48,9 @@ ReactDOM.render(
             <Route exact path="/bug" component={Bugreport} />
             <Route exact path="/report" component={Reportplayer} />
             <Route exact path="/appeal" component={Banappeal} />
+            
             <Route exact path="/allowlist" component={Allowlist} />
+            <Route exact path="/staff" component={Staff} />
 
             {/* <Route exact path="/privacy" component={Privacy} /> */}
 
@@ -55,7 +59,6 @@ ReactDOM.render(
 
            
             
-            {/* <Route exact path="/staff" component={Staffapp} /> */}
             
             {/* <Route exact path="/developer" component={Devapp} /> */}
             
