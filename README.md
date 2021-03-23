@@ -53,7 +53,6 @@ now-ui-kit-react
     ├── index.js
     └── views
         ├── Index.js
-        ├── NucleoIcons.js
         ├── examples
         │   ├── LandingPage.js
         │   ├── LoginPage.js
@@ -68,7 +67,6 @@ now-ui-kit-react
             ├── Javascript.js
             ├── Navbars.js
             ├── Notifications.js
-            ├── NucleoIcons.js
             ├── Pagination.js
             ├── SignUp.js
             ├── Tabs.js

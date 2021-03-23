@@ -13,7 +13,7 @@ import {
 } from "reactstrap";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
+import IndexNavbar from '../../components/Navbars/IndexNavbar';
 
 
 function LandingPage() {
@@ -32,7 +32,7 @@ function LandingPage() {
   }, []);
   return (
     <>
-      <ExamplesNavbar />
+      <IndexNavbar />
       <div className="wrapper">
         
         <div className="section section-about-us">
