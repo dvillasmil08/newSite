@@ -24,6 +24,7 @@ import CompleteExamples from "./index-sections/CompleteExamples.js";
 import SignUp from "./index-sections/SignUp.js";
 import Examples from "./index-sections/Examples.js";
 import Download from "./index-sections/Download.js";
+import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 
 function Index() {
   React.useEffect(() => {
@@ -39,7 +40,7 @@ function Index() {
   });
   return (
     <>
-      <IndexNavbar />
+      <ExamplesNavbar />
       <div className="wrapper">
         <IndexHeader />
         <div className="main">

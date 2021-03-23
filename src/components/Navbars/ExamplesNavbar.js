@@ -130,7 +130,7 @@ function ExamplesNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
+                  href="https://twitter.com/WildRPofficial"
                   target="_blank"
                   id="twitter-tooltip"
                 >
@@ -143,28 +143,28 @@ function ExamplesNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                  href="https://www.youtube.com/channel/UCAfpEZ4Ffb8i1sqYHDLijXA"
                   target="_blank"
-                  id="facebook-tooltip"
+                  id="youtube-tooltip"
                 >
-                  <i className="fab fa-facebook-square"></i>
-                  <p className="d-lg-none d-xl-none">Facebook</p>
+                  <i className="fab fa-youtube-square"></i>
+                  <p className="d-lg-none d-xl-none">Youtube</p>
                 </NavLink>
-                <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
+                <UncontrolledTooltip target="#youtube-tooltip">
+                  Like & Subscribe on Youtube
                 </UncontrolledTooltip>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                  href="https://discord.gg/kagKhnW"
                   target="_blank"
-                  id="instagram-tooltip"
+                  id="discord-tooltip"
                 >
-                  <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
+                  <i className="fab fa-discord"></i>
+                  <p className="d-lg-none d-xl-none">Discord</p>
                 </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
+                <UncontrolledTooltip target="#discord-tooltip">
+                  Join us in Discord
                 </UncontrolledTooltip>
               </NavItem>
             </Nav>
