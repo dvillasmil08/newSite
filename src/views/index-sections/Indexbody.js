@@ -10,7 +10,7 @@ import { Button,
 
 // core components
 
-function Download() {
+function Indexbody() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -67,7 +67,7 @@ function Download() {
       >
         <Container>
           <Row className="justify-content-md-center">
-              <a href="https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe" target="_blank" rel="noopener noreferrer">
+              <a href="https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe">
                 <img
                   alt="..."
                   className="img-raised"
@@ -75,12 +75,12 @@ function Download() {
                 ></img>
               </a>
               
+            
               <Col className="text-center" lg="8" md="12">
-              <h5 className="description">
+              <h5 className="description"><br></br>
               Our windows launcher is required to play WildRP. If the above image does not work you can use our <a href='https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe' style={{color:'#e4b85d', textDecoration:'none'}}
               > alternative download link.</a></h5>
             </Col>
-            
           </Row>
           <br></br>
           <br></br>
@@ -96,7 +96,7 @@ function Download() {
             <Button
                 className="btn-round mr-1"
                 color="info"
-                href="https://www.creative-tim.com/product/now-ui-kit-react?ref=nukr-index-page"
+                href="https://discord.gg/kagKhnW"
                 outline type="button"
               >
                 Launch Discord
@@ -111,58 +111,10 @@ function Download() {
               </h6>
             </Col>
           </Row>
-          <br></br>
-          <br></br>
-          <Row className="justify-content-md-center sharing-area text-center">
-            <Col className="text-center" lg="8" md="12">
-              <h3>Thank you for supporting us!</h3>
-            </Col>
-            <Col className="text-center" lg="8" md="12">
-              <Button
-                className="btn-neutral btn-icon btn-round"
-                color="twitter"
-                href="https://www.twitter.com/creativetim?ref=creativetim"
-                id="tooltip86114138"
-                size="lg"
-                target="_blank"
-              >
-                <i className="fab fa-twitter"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip86114138">
-                Follow us
-              </UncontrolledTooltip>
-              <Button
-                className="btn-neutral btn-icon btn-round"
-                color="youtube"
-                href="https://www.facebook.com/creativetim?ref=creativetim"
-                id="tooltip735272548"
-                size="lg"
-                target="_blank"
-              >
-                <i className="fab fa-youtube-square"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip735272548">
-                Like & Subscribe
-              </UncontrolledTooltip>
-              <Button
-                className="btn-neutral btn-icon btn-round"
-                color="facebook"
-                href="https://www.linkedin.com/company-beta/9430489/?ref=creativetim"
-                id="tooltip647117716"
-                size="lg"
-                target="_blank"
-              >
-                <i className="fab fa-discord"></i>
-              </Button>
-              <UncontrolledTooltip delay={0} target="tooltip647117716">
-                Join us
-              </UncontrolledTooltip>
-            </Col>
-          </Row>
         </Container>
       </div>
     </>
   );
 }
 
-export default Download;
+export default Indexbody;

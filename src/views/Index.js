@@ -11,7 +11,7 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 
 // sections for this page
 import Typography from "./index-sections/Typography.js";
-import Download from "./index-sections/Download.js";
+import Indexbody from "./index-sections/Indexbody.js";
 
 function Index() {
   React.useEffect(() => {
@@ -30,7 +30,7 @@ function Index() {
       <IndexNavbar />
       <div className="wrapper">
         {/* <IndexHeader /> */}
-          <Download />
+          <Indexbody />
         <div className="main">
          
    

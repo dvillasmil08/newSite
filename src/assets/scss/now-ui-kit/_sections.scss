@@ -19,8 +19,8 @@
 }
 
 .page-header{
-  min-height: 100vh;
-  max-height: 999px;
+//   min-height: 100vh;
+//   max-height: 999px;
   padding: 0;
   color: $white-color;
   position: relative;
@@ -303,7 +303,7 @@
     background-color: $orange-bg;
 }
 [data-background-color="black"]{
-    background-color: $black-color;
+    background-color: #000000;
 }
 
 [data-background-color]:not([data-background-color="gray"]){
