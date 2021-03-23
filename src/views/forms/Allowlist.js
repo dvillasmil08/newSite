@@ -39,7 +39,7 @@ function wordCounter(val){
         <div className="section "style={{backgroundImage:`url(${BackgroundImage})`}} >
         <Container>
         <Col className="ml-auto mr-auto " md="12" >
-                <h1 className="h1-seo">ALLOWLIST APPLICATION</h1>
+        <h2 className="" style={{color:'white'}}>Allowlist Application</h2>
                
                 {/* Breadcrumb */}
                 <div>
