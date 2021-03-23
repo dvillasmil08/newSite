@@ -166,6 +166,9 @@ function wordCounter(val){
                     
                     <p className="">If you could have two super powers and had to use them hand in hand, what woukd they be and why? Also, what would be your kryptonite?</p>
                         <Input type='field' name='text' id='charBackground' required />
+
+
+                    
                         
                     <div><p>By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.</p>
                     <Button

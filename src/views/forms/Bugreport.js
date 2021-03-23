@@ -65,7 +65,7 @@ function Bugreport() {
             
         {/* SECOND PART */}
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
-                <h2 className="" style={{color:'white'}}>QUESTION #2</h2>
+                <h2 className="description" style={{color:'white'}}>QUESTION #2</h2>
                
                     <div>
                          <Label for='bugDescription'>What is the bug? Please make sure you are as detailed as possible</Label>
@@ -76,6 +76,8 @@ function Bugreport() {
                         <Input type='field' name='text' id='reproBug' placeholder='' required />
                     </div>
 
+        </Col>
+        <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
                     <div><p>By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.</p>
                     <Button
                             className="btn-round"
@@ -89,9 +91,9 @@ function Bugreport() {
                             <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button>
                     </div>
+        </Col>
                     
                 
-        </Col>
         </Container>
         </div>
 
