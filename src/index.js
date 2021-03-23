@@ -33,6 +33,8 @@ import Banappeal from "views/forms/Banappeal";
 import Staff from "views/forms/Staff";
 import Devapp from "views/forms/Devapp";
 import Lawapp from "views/forms/Lawapp";
+import Streamapp from "views/forms/Streamapp";
+
 
 
 
@@ -56,6 +58,7 @@ ReactDOM.render(
             <Route exact path="/developer" component={Devapp} />
             <Route exact path="/law" component={Lawapp} />
 
+            <Route exact path="/streamers" component={Streamapp} />
             {/* <Route exact path="/privacy" component={Privacy} /> */}
 
             {/* <Route exact path="/rules" component={Rules} /> */}
@@ -66,7 +69,6 @@ ReactDOM.render(
             
             
            
-            {/* <Route exact path="/streamers" component={Streamapp} /> */}
             
             {/* <Route exact path="/branding" component={Branding} /> */}
 
