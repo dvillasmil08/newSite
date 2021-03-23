@@ -10,10 +10,7 @@ import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
 // sections for this page
-import Images from "./index-sections/Images.js";
-import BasicElements from "./index-sections/BasicElements.js";
 import Typography from "./index-sections/Typography.js";
-import Javascript from "./index-sections/Javascript.js";
 import Carousel from "./index-sections/Carousel.js";
 import NucleoIcons from "./index-sections/NucleoIcons.js";
 import CompleteExamples from "./index-sections/CompleteExamples.js";
@@ -40,19 +37,15 @@ function Index() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-          <Images />
-          <BasicElements />
-      
-          
-          
-          <Typography />
-          <Javascript />
-          <Carousel />
-          <NucleoIcons />
-          <CompleteExamples />
-          <SignUp />
-          <Examples />
           <Download />
+         
+   
+          {/* <Typography /> */}
+          {/* <Carousel /> */}
+          {/* <NucleoIcons /> */}
+          {/* <CompleteExamples /> */}
+          {/* <SignUp /> */}
+          {/* <Examples /> */}
         </div>
         <DarkFooter />
       </div>

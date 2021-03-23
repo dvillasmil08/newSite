@@ -6,12 +6,9 @@ import { Button,
   UncontrolledTooltip,
   Row,
   Col,
-  Carousel,
-  CarouselItem,
-  CarouselIndicators, } from "reactstrap";
+ } from "reactstrap";
 
 // core components
-import launcherImg from '../../assets/img/launcher.png'
 
 function Download() {
   return (
@@ -20,27 +17,9 @@ function Download() {
         className="section section-download"
         data-background-color="black"
         id="download-section"
+        style={{backgroundColor:'#050b0b'}}
       >
         <Container>
-          <Row className="justify-content-md-center">
-            <Col className="text-center" lg="8" md="12">
-              <h3 className="title">Get ready to ride in saints crossing</h3>
-              <h5 className="description">
-              WildRP is a premiere roleplay community. We aim to bring an atmosphere of high quality roleplay that encourages in-depth character development while providing a wide range of features and constant updates.
-              </h5>
-            </Col>
-            <Col className="text-center" lg="8" md="12">
-              <Button
-                className="btn-round mr-1"
-                color="info"
-                href="https://www.creative-tim.com/product/now-ui-kit-react?ref=nukr-index-page"
-                role="button"
-                size="lg"
-              >
-                Allowlist Application
-              </Button>
-            </Col>
-          </Row>
           <Row className="justify-content-md-center">
               <a href="https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe" target="_blank" rel="noopener noreferrer">
                 <img
@@ -72,10 +51,10 @@ function Download() {
                 className="btn-round mr-1"
                 color="info"
                 href="https://www.creative-tim.com/product/now-ui-kit-react?ref=nukr-index-page"
-                role="button"
-                size="lg"
+                outline type="button"
               >
                 Launch Discord
+                <i src={require('../../assets/img/wheel.svg')}></i>
               </Button>
             </Col>
           </Row>

@@ -14,11 +14,15 @@ import {
   Nav,
   Container,
   UncontrolledTooltip,
+  Modal,
+  ModalBody,
+  Table
 } from "reactstrap";
 
 function ExamplesNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
+  const [modal1, setModal1] = React.useState(false);
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
@@ -58,7 +62,7 @@ function ExamplesNavbar() {
               href="#pablo"
               id="navbarDropdown"
               tag="a"
-              onClick={(e) => e.preventDefault()}
+              
             >
               <span className="button-bar"></span>
               <span className="button-bar"></span>
@@ -66,8 +70,8 @@ function ExamplesNavbar() {
             </DropdownToggle>
             <DropdownMenu aria-labelledby="navbarDropdown">
               <DropdownItem 
-              header tag='a' 
-              // href='https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe'
+              tag='a' 
+              href='https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe'
               style={{color:'#e4b85d', textDecoration:'none'}}
               >DOWNLOAD LAUNCHER
               </DropdownItem>
@@ -93,8 +97,66 @@ function ExamplesNavbar() {
                           
               <DropdownItem tag='a' href='/privacy'>Privacy Policy</DropdownItem>
               <DropdownItem tag='a' href='/rules'>Rules</DropdownItem>
-              <DropdownItem tag='a' href='/Donate'>Donate</DropdownItem>
-              <DropdownItem tag='a' href='https://www.merchgardens.com/collections/WildRP'>Merchendise</DropdownItem>
+              <DropdownItem tag='a' href='https://www.merchgardens.com/collections/WildRP'>Store</DropdownItem>
+              <DropdownItem
+              color="primary"
+              className="mr-1"
+              onClick={() => setModal1(true)}
+              >Donate
+              </DropdownItem>
+              <Modal isOpen={modal1} toggle={() => setModal1(false)}>
+                <div className="modal-header justify-content-center">
+                  <button
+                    className="close"
+                    type="button"
+                    onClick={() => setModal1(false)}
+                  >
+                    <i className="now-ui-icons ui-1_simple-remove"></i>
+                  </button>
+                  <h7 className="title text-center">
+                  Giving money to the server is never required but greatly appreciated. Any money sent will be used help us cover server costs.
+                  If you would like to help cover those costs you can send money via Paypal to Donations@wildrp.com for a one time payment or sign up for a reoccurring subscription via the links below: 
+
+                  </h7>
+                </div>
+                <ModalBody>
+                <Table borderless className= 'justify-content-center'>
+                  <tbody>
+                    <tr>
+                      <th><a href='https://py.pl/1F4tPfiddgM' style={{textDecoration:'none', color:'#e4b85d'}}>$5 USD</a></th>
+                      <th><a href='https://py.pl/3z5RF' style={{textDecoration:'none', color:'#e4b85d'}}>$30 USD</a></th>
+                    </tr>
+                    <tr>
+                      <th><a href='https://py.pl/aSFZb' style={{textDecoration:'none', color:'#e4b85d'}}>$10 USD</a></th>
+                      <th><a href='https://py.pl/1LTaol' style={{textDecoration:'none', color:'#e4b85d'}}>$40 USD</a></th>
+                    </tr>
+                    <tr>
+                      <th><a href='https://py.pl/1ciVfH' style={{textDecoration:'none', color:'#e4b85d'}}>$15 USD</a></th>
+                      <th><a href='https://py.pl/qgMTl' style={{textDecoration:'none', color:'#e4b85d'}}>$50 USD</a></th>
+                    </tr>
+                    <tr>
+                      <th><a href='https://py.pl/5ysu9' style={{textDecoration:'none', color:'#e4b85d'}}>$20 USD</a></th>
+                      <th><a href='https://py.pl/eehFz'style={{textDecoration:'none', color:'#e4b85d'}} >$75 USD</a></th>
+                    </tr>
+                    <tr>
+                      <th><a href='https://py.pl/QNNA3zOV4m' style={{textDecoration:'none', color:'#e4b85d'}}>$25 USD</a></th>
+                      <th><a href='https://py.pl/fIqHn'style={{textDecoration:'none', color:'#e4b85d'}} >$100 USD</a></th>
+                    </tr>
+                  </tbody>
+              </Table>
+                </ModalBody>
+                <div className="modal-footer justify-content-md-center text-center">
+                  <h7>
+                  If you have subscribed monthly and wish to cancel your subscription you must do so through the 
+                  <a href='https://www.paypal.com/us/smarthelp/article/how-do-i-cancel-a-billing-agreement,-automatic-recurring-payment-or-subscription-on-paypal-faq2254'> Paypal website.</a>
+                  </h7>
+                </div>
+              </Modal>
+
+
+
+
+
             </DropdownMenu>
           </UncontrolledDropdown>
           <div className="navbar-translate">
