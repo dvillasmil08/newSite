@@ -17,7 +17,7 @@
 */
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // styles for this kit
 import "assets/css/bootstrap.min.css";
@@ -26,23 +26,44 @@ import "assets/demo/demo.css?v=1.4.0";
 import "assets/demo/nucleo-icons-page-styles.css?v=1.4.0";
 // pages for this kit
 import Index from "views/Index.js";
-import LandingPage from "views/examples/LandingPage.js";
+import Allowlist from "views/forms/Allowlist";
+
 
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      <Switch>
-        <Route path="/index" render={(props) => <Index {...props} />} />
+  // <BrowserRouter>
+    
+    <Router>
+        <Switch>
+            <Route exact path="/" component={Index} />
         
-        <Route
-          path="/landing-page"
-          render={(props) => <LandingPage {...props} />}
-        />
-        <Redirect to="/index" />
-        <Redirect from="/" to="/index" />
-      </Switch>
-    </Switch>
-  </BrowserRouter>,
-  document.getElementById("root")
+            <Route exact path="/allowlist" component={Allowlist} />
+
+            {/* <Route exact path="/privacy" component={Privacy} />
+
+            <Route exact path="/rules" component={Rules} />
+            
+            <Route exact path="/report" component={Reportplayer} />
+
+            <Route exact path="/bugs" component={Bugreport} />
+           
+            <Route exact path="/appeal" component={Banappeal} />
+            
+            <Route exact path="/staff" component={Staffapp} />
+            
+            <Route exact path="/developer" component={Devapp} />
+            
+            <Route exact path="/law" component={Lawapp} />
+           
+            <Route exact path="/streamers" component={Streamapp} />
+            
+            <Route exact path="/branding" component={Branding} />
+
+            <Route exact path="/donate" component={Donate} /> */}
+    
+        </Switch>
+    </Router>
+   
+  // </BrowserRouter>,
+  ,document.getElementById("root")
 );

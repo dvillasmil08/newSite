@@ -162,8 +162,7 @@ function IndexNavbar() {
           </UncontrolledDropdown>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/index?ref=nukr-examples-navbar"
-              target="_blank"
+              href="/index"
               id="navbar-brand"
             >
               WildRP

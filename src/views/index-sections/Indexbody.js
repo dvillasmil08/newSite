@@ -51,7 +51,8 @@ function Indexbody() {
             <Button 
             className="btn-round" 
             color="default" 
-            outline type="button">
+            outline type="button"
+            style={{color:'#e4b85d'}}>
                 Allowlist Application
               </Button>
             </Col>
@@ -94,14 +95,16 @@ function Indexbody() {
             </Col>
             <Col md="12">
             <Button
-                className="btn-round mr-1"
-                color="info"
-                href="https://discord.gg/kagKhnW"
+                className="btn-round" 
+                // color="default" 
                 outline type="button"
+                style={{color:'#e4b85d'}}
+                href="https://discord.gg/kagKhnW"
               >
                 Launch Discord
                 <i src={require('../../assets/img/wheel.svg')}></i>
               </Button>
+
             </Col>
           </Row>
           <Row className="justify-content-md-center text-center mt-5">
