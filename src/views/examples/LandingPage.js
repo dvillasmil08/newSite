@@ -14,8 +14,7 @@ import {
 
 // core components
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import LandingPageHeader from "components/Headers/LandingPageHeader.js";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
+
 
 function LandingPage() {
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -35,7 +34,7 @@ function LandingPage() {
     <>
       <ExamplesNavbar />
       <div className="wrapper">
-        <LandingPageHeader />
+        
         <div className="section section-about-us">
           <Container>
             <Row>
@@ -321,7 +320,7 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
-        <DefaultFooter />
+        
       </div>
     </>
   );

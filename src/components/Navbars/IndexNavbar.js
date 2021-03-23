@@ -15,11 +15,15 @@ import {
   Nav,
   Container,
   UncontrolledTooltip,
+  Modal,
+  ModalBody,
+  Table
 } from "reactstrap";
 
 function IndexNavbar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
+  const [modal1, setModal1] = React.useState(false);
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
@@ -50,18 +54,122 @@ function IndexNavbar() {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
+      <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg">
         <Container>
+          <UncontrolledDropdown className="button-dropdown">
+            <DropdownToggle
+              caret
+              data-toggle="dropdown"
+              href="#pablo"
+              id="navbarDropdown"
+              tag="a"
+              
+            >
+              <span className="button-bar"></span>
+              <span className="button-bar"></span>
+              <span className="button-bar"></span>
+            </DropdownToggle>
+            <DropdownMenu aria-labelledby="navbarDropdown">
+              <DropdownItem 
+              tag='a' 
+              href='https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe'
+              style={{color:'#e4b85d', textDecoration:'none'}}
+              >DOWNLOAD LAUNCHER
+              </DropdownItem>
+              <DropdownItem divider></DropdownItem>
+                          
+              <DropdownItem tag='a' href='/bugs'>Bug Report</DropdownItem>
+              <DropdownItem tag='a' href='/report'>Report Player</DropdownItem>
+              <DropdownItem tag='a' href='/appeal'>Ban Appeal</DropdownItem>
+                          
+              <DropdownItem divider></DropdownItem>
+                          
+              <DropdownItem tag='a' href='/allowlist'>Allowlist</DropdownItem>
+              <DropdownItem tag='a' href='/staff'>Staff</DropdownItem>
+              <DropdownItem tag='a' href='/developer'>Developer</DropdownItem>
+              <DropdownItem tag='a' href='/law'>Law Enforcement</DropdownItem>
+
+              <DropdownItem divider></DropdownItem>
+
+              <DropdownItem tag='a' href='/streamers'>Streamers</DropdownItem>
+              <DropdownItem tag='a' href='/branding'>Branding</DropdownItem>
+
+              <DropdownItem divider></DropdownItem>
+                          
+              <DropdownItem tag='a' href='/privacy'>Privacy Policy</DropdownItem>
+              <DropdownItem tag='a' href='/rules'>Rules</DropdownItem>
+              <DropdownItem tag='a' href='https://www.merchgardens.com/collections/WildRP'>Store</DropdownItem>
+              <DropdownItem
+              color="primary"
+              className="mr-1"
+              onClick={() => setModal1(true)}
+              >Donate
+              </DropdownItem>
+              <Modal isOpen={modal1} toggle={() => setModal1(false)}>
+                <div className="modal-header justify-content-center">
+                  <button
+                    className="close"
+                    type="button"
+                    onClick={() => setModal1(false)}
+                  >
+                    <i className="now-ui-icons ui-1_simple-remove"></i>
+                  </button>
+                  <h7 className="title text-center">
+                  Giving money to the server is never required but greatly appreciated. Any money sent will be used help us cover server costs.
+                  If you would like to help cover those costs you can send money via Paypal to Donations@wildrp.com for a one time payment or sign up for a reoccurring subscription via the links below: 
+
+                  </h7>
+                </div>
+                <ModalBody>
+                <Table borderless className= 'justify-content-center'>
+                  <tbody>
+                    <tr>
+                      <th><a href='https://py.pl/1F4tPfiddgM' style={{textDecoration:'none', color:'#e4b85d'}}>$5 USD</a></th>
+                      <th><a href='https://py.pl/3z5RF' style={{textDecoration:'none', color:'#e4b85d'}}>$30 USD</a></th>
+                    </tr>
+                    <tr>
+                      <th><a href='https://py.pl/aSFZb' style={{textDecoration:'none', color:'#e4b85d'}}>$10 USD</a></th>
+                      <th><a href='https://py.pl/1LTaol' style={{textDecoration:'none', color:'#e4b85d'}}>$40 USD</a></th>
+                    </tr>
+                    <tr>
+                      <th><a href='https://py.pl/1ciVfH' style={{textDecoration:'none', color:'#e4b85d'}}>$15 USD</a></th>
+                      <th><a href='https://py.pl/qgMTl' style={{textDecoration:'none', color:'#e4b85d'}}>$50 USD</a></th>
+                    </tr>
+                    <tr>
+                      <th><a href='https://py.pl/5ysu9' style={{textDecoration:'none', color:'#e4b85d'}}>$20 USD</a></th>
+                      <th><a href='https://py.pl/eehFz'style={{textDecoration:'none', color:'#e4b85d'}} >$75 USD</a></th>
+                    </tr>
+                    <tr>
+                      <th><a href='https://py.pl/QNNA3zOV4m' style={{textDecoration:'none', color:'#e4b85d'}}>$25 USD</a></th>
+                      <th><a href='https://py.pl/fIqHn'style={{textDecoration:'none', color:'#e4b85d'}} >$100 USD</a></th>
+                    </tr>
+                  </tbody>
+              </Table>
+                </ModalBody>
+                <div className="modal-footer justify-content-md-center text-center">
+                  <h7>
+                  If you have subscribed monthly and wish to cancel your subscription you must do so through the 
+                  <a href='https://www.paypal.com/us/smarthelp/article/how-do-i-cancel-a-billing-agreement,-automatic-recurring-payment-or-subscription-on-paypal-faq2254'> Paypal website.</a>
+                  </h7>
+                </div>
+              </Modal>
+
+
+
+
+
+            </DropdownMenu>
+          </UncontrolledDropdown>
           <div className="navbar-translate">
             <NavbarBrand
-              href="https://demos.creative-tim.com/now-ui-kit-react/#/index?ref=nukr-index-navbar"
+              href="https://demos.creative-tim.com/now-ui-kit-react/index?ref=nukr-examples-navbar"
               target="_blank"
               id="navbar-brand"
             >
-              Now UI Kit React
+              WildRP
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              Designed by Invision. Coded by Creative Tim
+              WildRP
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
@@ -85,61 +193,7 @@ function IndexNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
-                  href="#pablo"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    document
-                      .getElementById("download-section")
-                      .scrollIntoView();
-                  }}
-                >
-                  <i className="now-ui-icons arrows-1_cloud-download-93"></i>
-                  <p>Download</p>
-                </NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav>
-                <DropdownToggle
-                  caret
-                  color="default"
-                  href="#pablo"
-                  nav
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="now-ui-icons design_app mr-1"></i>
-                  <p>Components</p>
-                </DropdownToggle>
-                <DropdownMenu>
-                  <DropdownItem to="/index" tag={Link}>
-                    <i className="now-ui-icons business_chart-pie-36 mr-1"></i>
-                    All components
-                  </DropdownItem>
-                  <DropdownItem
-                    href="https://demos.creative-tim.com/now-ui-kit-react/#/documentation/introduction?ref=nukr-index-navbar"
-                    target="_blank"
-                  >
-                    <i className="now-ui-icons design_bullet-list-67 mr-1"></i>
-                    Documentation
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              <NavItem>
-                <Button
-                  className="nav-link btn-neutral"
-                  color="info"
-                  href="#pablo"
-                  id="upgrade-to-pro"
-                  onClick={(e) => e.preventDefault()}
-                >
-                  <i className="now-ui-icons arrows-1_share-66 mr-1"></i>
-                  <p>Upgrade to PRO</p>
-                </Button>
-                <UncontrolledTooltip target="#upgrade-to-pro">
-                  Cooming soon!
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="https://twitter.com/CreativeTim?ref=creativetim"
+                  href="https://twitter.com/WildRPofficial"
                   target="_blank"
                   id="twitter-tooltip"
                 >
@@ -152,28 +206,28 @@ function IndexNavbar() {
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                  href="https://www.youtube.com/channel/UCAfpEZ4Ffb8i1sqYHDLijXA"
                   target="_blank"
-                  id="facebook-tooltip"
+                  id="youtube-tooltip"
                 >
-                  <i className="fab fa-facebook-square"></i>
-                  <p className="d-lg-none d-xl-none">Facebook</p>
+                  <i className="fab fa-youtube-square"></i>
+                  <p className="d-lg-none d-xl-none">Youtube</p>
                 </NavLink>
-                <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
+                <UncontrolledTooltip target="#youtube-tooltip">
+                  Like & Subscribe on Youtube
                 </UncontrolledTooltip>
               </NavItem>
               <NavItem>
                 <NavLink
-                  href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                  href="https://discord.gg/kagKhnW"
                   target="_blank"
-                  id="instagram-tooltip"
+                  id="discord-tooltip"
                 >
-                  <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
+                  <i className="fab fa-discord"></i>
+                  <p className="d-lg-none d-xl-none">Discord</p>
                 </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
+                <UncontrolledTooltip target="#discord-tooltip">
+                  Join us in Discord
                 </UncontrolledTooltip>
               </NavItem>
             </Nav>
@@ -183,5 +237,4 @@ function IndexNavbar() {
     </>
   );
 }
-
 export default IndexNavbar;

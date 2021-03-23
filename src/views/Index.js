@@ -11,13 +11,7 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 
 // sections for this page
 import Typography from "./index-sections/Typography.js";
-import Carousel from "./index-sections/Carousel.js";
-import NucleoIcons from "./index-sections/NucleoIcons.js";
-import CompleteExamples from "./index-sections/CompleteExamples.js";
-import SignUp from "./index-sections/SignUp.js";
-import Examples from "./index-sections/Examples.js";
 import Download from "./index-sections/Download.js";
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 
 function Index() {
   React.useEffect(() => {
@@ -33,19 +27,15 @@ function Index() {
   });
   return (
     <>
-      <ExamplesNavbar />
+      <IndexNavbar />
       <div className="wrapper">
-        <IndexHeader />
-        <div className="main">
+        {/* <IndexHeader /> */}
           <Download />
+        <div className="main">
          
    
           {/* <Typography /> */}
-          {/* <Carousel /> */}
-          {/* <NucleoIcons /> */}
-          {/* <CompleteExamples /> */}
-          {/* <SignUp /> */}
-          {/* <Examples /> */}
+          
         </div>
         <DarkFooter />
       </div>

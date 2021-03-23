@@ -29,21 +29,21 @@ function IndexHeader() {
 
   return (
     <>
-      <div className="page-header clear-filter">
-        <div
+      
+        {/* <div
           className="page-header-image"
           style={{
             backgroundImage: "url(" + require("assets/img/cover.jpg") + ")",
           }}
           ref={pageHeader}
-        ></div>
-        <Container>
-          <div className="content-center brand">
+        ></div> */}
+       
+          
             <h1 className="h1-seo">A NEW DAY</h1>
             <h1 className="h1-seo">IS DAWNING</h1>
           <Row className="justify-content-md-center">
             <Col className="text-center" lg="8" md="12">
-              <h3 className="title">Get ready to ride in saints crossing</h3>
+              <h3 className="title" style={{marginTop:'100px', color:'#e4b85d', fontSize:'150px'}}>Get ready to ride in saints crossing</h3>
               <h5 className="description">
               WildRP is a premiere roleplay community. We aim to bring an atmosphere of high quality roleplay that encourages in-depth character development while providing a wide range of features and constant updates.
               </h5>
@@ -57,9 +57,9 @@ function IndexHeader() {
               </Button>
             </Col>
           </Row>
-          </div>
-        </Container>
-      </div>
+          
+        
+      
     </>
   );
 }
