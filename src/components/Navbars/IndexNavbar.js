@@ -56,22 +56,22 @@ function IndexNavbar() {
       ) : null}
       <Navbar className={"fixed-top " + navbarColor} 
       color="info" expand="lg"
-      
       >
-        <Container>
-          <UncontrolledDropdown className="button-dropdown">
-            <DropdownToggle
-              caret
-              data-toggle="dropdown"
-              href="#pablo"
-              id="navbarDropdown"
-              tag="a"
-              
+          <Container>
+        <div className="navbar-translate">
+            <NavbarBrand
+              href="/"
+              id="navbar-brand"
             >
-              <span className="button-bar"></span>
-              <span className="button-bar"></span>
-              <span className="button-bar"></span>
-            </DropdownToggle>
+            <img  alt="..." src={require("../../assets/img/logo-white.png")} width='100'></img>  
+            </NavbarBrand>
+      
+          </div>
+          <UncontrolledDropdown className="button-dropdown">
+          <DropdownToggle nav className='dropbtn top-button-show'  style={{color:'#e4b85d', fontSize:'15px', textDecoration:'none'}}>
+              MENU
+          </DropdownToggle>
+
             <DropdownMenu aria-labelledby="navbarDropdown">
               <DropdownItem 
               tag='a' 
@@ -81,7 +81,7 @@ function IndexNavbar() {
               </DropdownItem>
               <DropdownItem divider></DropdownItem>
                           
-              <DropdownItem tag='a' href='/bugs'>Bug Report</DropdownItem>
+              <DropdownItem tag='a' href='/bug'>Bug Report</DropdownItem>
               <DropdownItem tag='a' href='/report'>Report Player</DropdownItem>
               <DropdownItem tag='a' href='/appeal'>Ban Appeal</DropdownItem>
                           
@@ -114,7 +114,7 @@ function IndexNavbar() {
                     className="close"
                     type="button"
                     onClick={() => setModal1(false)}
-                  >
+                    >
                     <i className="now-ui-icons ui-1_simple-remove"></i>
                   </button>
                   <h7 className="title text-center">
@@ -163,16 +163,8 @@ function IndexNavbar() {
 
             </DropdownMenu>
           </UncontrolledDropdown>
+            
           <div className="navbar-translate">
-            <NavbarBrand
-              href="/index"
-              id="navbar-brand"
-            >
-              WildRP
-            </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              WildRP
-            </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -189,7 +181,7 @@ function IndexNavbar() {
           </div>
           <Collapse
             className="justify-content-end"
-            isOpen={collapseOpen}
+            // isOpen={collapseOpen}
             navbar
           >
             <Nav navbar>
