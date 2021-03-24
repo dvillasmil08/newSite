@@ -36,6 +36,8 @@ import Lawapp from "views/forms/Lawapp";
 import Streamapp from "views/forms/Streamapp";
 import Branding from "views/forms/Branding";
 import Rules from "views/forms/Rules";
+import Privacy from "views/forms/Privacy";
+
 
 
 
@@ -65,19 +67,7 @@ ReactDOM.render(
             <Route exact path="/branding" component={Branding} />
             
             <Route exact path="/rules" component={Rules} />
-            {/* <Route exact path="/privacy" component={Privacy} /> */}
-
-            
-
-           
-            
-            
-            
-           
-            
-
-            {/* <Route exact path="/donate" component={Donate} /> */}
-    
+            <Route exact path="/privacy" component={Privacy} />    
         </Switch>
     </Router>
    
