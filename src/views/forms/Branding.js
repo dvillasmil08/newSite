@@ -86,36 +86,36 @@ function Branding() {
                     <Table borderless className= 'justify-content-center'>
                   <tbody>
                     <tr>
-                      <th>Logo  <a href='../../assets/branding-dir/logo.zip' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
-                      <th>Logo <a href='' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
-                      <th>Logo <a href='' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
+                      <th><a href='../../assets/branding-dir/logo.zip' style={{textDecoration:'none', color:'#e4b85d'}}>Logo White</a></th>
+                      <th><a href='' style={{textDecoration:'none', color:'#e4b85d'}}>192 x 192 (w)</a></th>
+                      <th><a href='' style={{textDecoration:'none', color:'#e4b85d'}}>48 x 48 (B)</a></th>
                     
                     
                     
                     </tr>
                     <tr>
-                      <th>Logo<a href='https://py.pl/aSFZb' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
-                      <th>Logo<a href='https://py.pl/1LTaol' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
-                      <th>Logo <a href='' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
+                      <th><a href='https://py.pl/aSFZb' style={{textDecoration:'none', color:'#e4b85d'}}>24 x 24 (W)</a></th>
+                      <th><a href='https://py.pl/1LTaol' style={{textDecoration:'none', color:'#e4b85d'}}>1000 x 1000 (W)</a></th>
+                      <th><a href='' style={{textDecoration:'none', color:'#e4b85d'}}> 144 x 144 (B) </a></th>
                     </tr>
                     <tr>
-                      <th>Logo<a href='https://py.pl/1ciVfH' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
-                      <th>Logo<a href='https://py.pl/qgMTl' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
-                      <th>Logo <a href='' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
+                      <th><a href='https://py.pl/1ciVfH' style={{textDecoration:'none', color:'#e4b85d'}}>48 x 48 (W)</a></th>
+                      <th><a href='https://py.pl/qgMTl' style={{textDecoration:'none', color:'#e4b85d'}}>Logo black</a></th>
+                      <th> <a href='' style={{textDecoration:'none', color:'#e4b85d'}}>192 x 192 B</a></th>
                     </tr>
                     <tr>
-                      <th>Logo<a href='https://py.pl/5ysu9' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
-                      <th>Logo<a href='https://py.pl/eehFz'style={{textDecoration:'none', color:'#e4b85d'}} >Download File</a></th>
-                      <th>Logo <a href='' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
+                      <th><a href='https://py.pl/5ysu9' style={{textDecoration:'none', color:'#e4b85d'}}>96 x 96 (W)</a></th>
+                      <th>Logo<a href='https://py.pl/eehFz'style={{textDecoration:'none', color:'#e4b85d'}} >Logo Print Black</a></th>
+                      <th>Logo <a href='' style={{textDecoration:'none', color:'#e4b85d'}}> 512 x 512 (B)</a></th>
                     </tr>
                     <tr>
-                      <th>Logo<a href='https://py.pl/QNNA3zOV4m' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
-                      <th>Logo<a href='https://py.pl/fIqHn'style={{textDecoration:'none', color:'#e4b85d'}} >Download File</a></th>
-                      <th>Logo <a href='' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
+                      <th>Logo<a href='https://py.pl/QNNA3zOV4m' style={{textDecoration:'none', color:'#e4b85d'}}>144 x 144 (W)</a></th>
+                      <th>Logo<a href='https://py.pl/fIqHn'style={{textDecoration:'none', color:'#e4b85d'}} >24 x 24 (B)</a></th>
+                      <th>Logo <a href='' style={{textDecoration:'none', color:'#e4b85d'}}>1000 x 1000 (B)</a></th>
                     </tr>
                     <tr>
-                      <th>Logo<a href='https://py.pl/QNNA3zOV4m' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
-                      <th>Logo<a href='https://py.pl/fIqHn'style={{textDecoration:'none', color:'#e4b85d'}} >Download File</a></th>
+                      <th>Logo<a href='https://py.pl/QNNA3zOV4m' style={{textDecoration:'none', color:'#e4b85d'}}>192 x 192 (W)</a></th>
+                      <th>Logo<a href='https://py.pl/fIqHn'style={{textDecoration:'none', color:'#e4b85d'}} >48 x 48 (B)</a></th>
                       <th>Logo <a href='' style={{textDecoration:'none', color:'#e4b85d'}}>Download File</a></th>
                     </tr>
                   </tbody>

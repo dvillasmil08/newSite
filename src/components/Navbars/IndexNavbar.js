@@ -64,6 +64,9 @@ function IndexNavbar() {
               id="navbar-brand"
             >
             <img  alt="..." src={require("../../assets/img/logo-white.png")} width='100'></img>  
+            {/* <DropdownToggle nav className='dropbtn top-button-show'  style={{color:'#e4b85d', fontSize:'15px', textDecoration:'none'}}>
+              MENU
+          </DropdownToggle> */}
             </NavbarBrand>
       
           </div>
@@ -94,20 +97,24 @@ function IndexNavbar() {
 
               <DropdownItem divider></DropdownItem>
 
-              <DropdownItem tag='a' href='/streamers'>Streamers</DropdownItem>
+              {/* <DropdownItem tag='a' href='/streamers'>Streamers</DropdownItem> */}
+              
               <DropdownItem tag='a' href='/branding'>Branding</DropdownItem>
 
               <DropdownItem divider></DropdownItem>
                           
-              <DropdownItem tag='a' href='/privacy'>Privacy Policy</DropdownItem>
+              {/* <DropdownItem tag='a' href='/privacy'>Privacy Policy</DropdownItem> */}
+
               <DropdownItem tag='a' href='/rules'>Rules</DropdownItem>
-              <DropdownItem tag='a' href='https://www.merchgardens.com/collections/WildRP'>Store</DropdownItem>
-              <DropdownItem
+
+              {/* <DropdownItem tag='a' href='https://www.merchgardens.com/collections/WildRP'>Merch</DropdownItem> */}
+              {/* <DropdownItem
               color="primary"
               className="mr-1"
               onClick={() => setModal1(true)}
               >Donate
-              </DropdownItem>
+              </DropdownItem> */}
+
               <Modal isOpen={modal1} toggle={() => setModal1(false)}>
                 <div className="modal-header justify-content-center">
                   <button
@@ -185,6 +192,22 @@ function IndexNavbar() {
             navbar
           >
             <Nav navbar>
+              <NavItem>
+                <NavLink
+                tag='a' href='https://www.merchgardens.com/collections/WildRP'>
+                <li className="nav-item">Merch</li>
+                </NavLink>
+              </NavItem>
+              
+              <NavItem>
+              <NavLink
+                className="mr-1"
+                onClick={() => setModal1(true)}
+                >
+                <li className="nav-item">Donate</li>
+                </NavLink>
+              </NavItem>
+
               <NavItem>
                 <NavLink
                   href="https://twitter.com/WildRPofficial"
