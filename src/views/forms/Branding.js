@@ -11,6 +11,8 @@ Table} from "reactstrap";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import BackgroundImage from '../../assets/img/cover.jpg'
 import IndexNavbar from "components/Navbars/IndexNavbar";
+import Recaptcha from 'react-recaptcha';
+
 
 function Branding() {
   React.useEffect(() => {
@@ -60,7 +62,11 @@ function Branding() {
                     <p>Logo Print White<a style={{color:'#e4b85d'}} href="/branding-dir/logo-print.zip">Download File</a></p>
                     <p>Icon 24 x 24 (W)<a style={{color:'#e4b85d'}} href="/branding-dir/24x24.zip">Download File</a></p>
                     <p>Icon 48 x 48 (W)<a style={{color:'#e4b85d'}} href="/branding-dir/48x48.zip">Download File</a></p>
-                    <p>Icon 96 x 96 (W)<a style={{color:'#e4b85d'}} href="/branding-dir/96x96.zip">Download File</a></p>
+                    
+                    
+                    <p>Icon 96 x 96 (W)<a style={{color:'#e4b85d'}} href="../../assets/img/branding-dir/96x96-W.png" >Download File</a></p>
+                    
+                    
                     <p>Icon 144 x 144 (W)<a style={{color:'#e4b85d'}} href="/branding-dir/144x144.zip">Download File</a></p>
                     <p>Icon 192 x 192 (W)<a style={{color:'#e4b85d'}} href="/branding-dir/192x192.zip">Download File</a></p>
                     <p>Icon 512 x 512 (W)<a style={{color:'#e4b85d'}}href="/branding-dir/512x512.zip">Download File</a></p>

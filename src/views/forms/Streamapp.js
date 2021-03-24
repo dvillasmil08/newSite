@@ -13,6 +13,7 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 import BackgroundImage from '../../assets/img/cover.jpg'
 import IndexNavbar from "components/Navbars/IndexNavbar";
 
+
 function Streamapp() {
   React.useEffect(() => {
     document.body.classList.add("landing-page");
@@ -31,7 +32,7 @@ function Streamapp() {
       <div className="wrapper" >
         {/* <LandingPageHeader /> */}
         <div className="main">
-        <div className="section" style={{backgroundImage:`url(${BackgroundImage})`}}>
+        <div className="section" style={{height:'100vh', backgroundImage:`url(${BackgroundImage})`}}>
         <Container >
         <Col className="ml-auto mr-auto text-center " md="12" style={{color:'white'}}>
 

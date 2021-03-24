@@ -13,6 +13,8 @@ import {
 import DarkFooter from "components/Footers/DarkFooter.js";
 import BackgroundImage from '../../assets/img/cover.jpg';
 import IndexNavbar from "components/Navbars/IndexNavbar";
+import Recaptcha from 'react-recaptcha';
+
 
 function Law() {
   React.useEffect(() => {
@@ -112,7 +114,11 @@ function Law() {
                     
                 
         </Col>
-
+                    <Recaptcha
+                    sitekey="6LfHY8QUAAAAANhkFVCaUI2gl9Te5phqd5VO6WEA"
+                    render="explicit"
+                    theme="dark"
+                    />  
 
                     
 

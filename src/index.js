@@ -35,6 +35,8 @@ import Devapp from "views/forms/Devapp";
 import Lawapp from "views/forms/Lawapp";
 import Streamapp from "views/forms/Streamapp";
 import Branding from "views/forms/Branding";
+import Rules from "views/forms/Rules";
+
 
 
 
@@ -61,9 +63,10 @@ ReactDOM.render(
 
             <Route exact path="/streamers" component={Streamapp} />
             <Route exact path="/branding" component={Branding} />
+            
+            <Route exact path="/rules" component={Rules} />
             {/* <Route exact path="/privacy" component={Privacy} /> */}
 
-            {/* <Route exact path="/rules" component={Rules} /> */}
             
 
            

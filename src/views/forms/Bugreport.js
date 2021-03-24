@@ -13,6 +13,8 @@ import {
 import DarkFooter from "components/Footers/DarkFooter.js";
 import BackgroundImage from '../../assets/img/cover.jpg'
 import IndexNavbar from "components/Navbars/IndexNavbar";
+import Recaptcha from 'react-recaptcha';
+
 
 function Bugreport() {
   React.useEffect(() => {
@@ -78,6 +80,12 @@ function Bugreport() {
 
         </Col>
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
+                    <Recaptcha
+                    sitekey="6LfHY8QUAAAAANhkFVCaUI2gl9Te5phqd5VO6WEA"
+                    render="explicit"
+                    theme="dark"
+                    />  
+                        
                     <div><p>By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.</p>
                     <Button
                             className="btn-round"
@@ -87,9 +95,13 @@ function Bugreport() {
                             size="lg"
                             target="_blank"
                             style={{color:'#e4b85d', fontSize:'20px', marginTop:'110px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
-                            >Submit
+                          >Submit
                             <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
-                    </Button>
+                    </Button> 
+
+
+
+
                     </div>
         </Col>
                     

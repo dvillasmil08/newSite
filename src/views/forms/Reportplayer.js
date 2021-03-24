@@ -13,6 +13,8 @@ import {
 import DarkFooter from "components/Footers/DarkFooter.js";
 import BackgroundImage from '../../assets/img/cover.jpg'
 import IndexNavbar from "components/Navbars/IndexNavbar";
+import Recaptcha from 'react-recaptcha';
+
 
 
 function Reportplayer() {
@@ -80,6 +82,12 @@ function Reportplayer() {
                     </div>
 
                     
+
+                    <Recaptcha
+                    sitekey="6LfHY8QUAAAAANhkFVCaUI2gl9Te5phqd5VO6WEA"
+                    render="explicit"
+                    theme="dark"
+                    />  
                     <div><p>By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.</p>
                     </div>
                     <Button
