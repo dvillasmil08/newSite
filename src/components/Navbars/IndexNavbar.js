@@ -185,18 +185,28 @@ function IndexNavbar() {
             <Nav navbar>
               <NavItem>
                 <NavLink
-                tag='a' href='https://www.merchgardens.com/collections/WildRP'>
-                <li className="nav-item">Merch</li>
+                tag='a' 
+                href='https://www.merchgardens.com/collections/WildRP'
+                id='merch-tooltip'
+                >
+                <i className="fas fa-tshirt" style={{fontSize:'15px'}}></i>
+                <p className="d-lg-none d-xl-none">Merchandise</p>
+                {/* <li className="nav-item">Merch</li> */}
                 </NavLink>
+                <UncontrolledTooltip target="#merch-tooltip">Store</UncontrolledTooltip>
               </NavItem>
               
               <NavItem>
               <NavLink
                 className="mr-1"
                 onClick={() => setModal1(true)}
+                id='donate-tooltip'
                 >
-                <li className="nav-item">Donate</li>
+                <i className="fab fa-cc-paypal" style={{fontSize:'15px'}}></i>
+                <i className="fas fa-comment-dollar" style={{fontSize:'20px'}}></i>
+                <p className="d-lg-none d-xl-none">Merchandise</p>
                 </NavLink>
+                <UncontrolledTooltip target="#donate-tooltip">Donate</UncontrolledTooltip>
               </NavItem>
 
               <NavItem>
