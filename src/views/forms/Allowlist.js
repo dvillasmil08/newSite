@@ -69,7 +69,10 @@ function wordCounter(val){
                 >GENERAL QUESTIONS</h2>
         </Col>
         
+            <Col
+            className="ml-auto mr-auto " md="12"
             
+            >
                 {/* DISCORD */}
                 <div>
                     <Input 
@@ -105,6 +108,7 @@ function wordCounter(val){
                 placeholder='Time Zone'required />
                 <br></br>
                 </div>
+            </Col>
             
         
                 {/* SECOND PART */}
