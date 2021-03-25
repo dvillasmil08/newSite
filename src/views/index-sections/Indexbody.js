@@ -38,9 +38,16 @@ function Indexbody() {
         ></div>
         
           <div className="content-center">
-            <h1 className="h1-seo" style={{color:'#e4b85d', fontSize:'100px'}}>A NEW DAY</h1>
-            <h1 className="h1-seo"style={{color:'#e4b85d', fontSize:'100px'}}>IS DAWNING</h1>
+            {/* <h1 className="h1-seo" style={{color:'#e4b85d', fontSize:'100px'}}>A NEW DAY</h1>
+            <h1 className="h1-seo"style={{color:'#e4b85d', fontSize:'100px'}}>IS DAWNING</h1> */}
           <Row className="justify-content-md-center">
+          <img
+              alt="..."
+              src={require('../../assets/img/a_new_day.png')}
+              style={{width:'100%'}}
+              >
+
+          </img>
             <Col className="text-center" lg="8" md="12">
               <h3 className="h1-seo">Get ready to ride in saints crossing</h3>
               <h5 className="description">

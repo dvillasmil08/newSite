@@ -33,9 +33,9 @@ function Branding() {
         {/* <LandingPageHeader /> */}
         <div className="main">
         <div className="section" style={{backgroundImage:`url(${BackgroundImage})`}}>
-        <Container>
+        <Container style={{height:'100vh'}}>
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
-                <h2 className="" style={{color:'white',marginTop:'8rem'}}>BRANDING</h2>
+                <h2 className="" style={{color:'white', marginTop:'8rem'}}>BRANDING</h2>
 
                 <div>
                 <p><a href='/index' style={{textDecoration:'none', color:'grey'}}>HOME / </a>
@@ -53,7 +53,7 @@ function Branding() {
                 
         
         {/* SECOND PART */}
-        <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
+        <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}><br></br>
                
                 
                     <div>
@@ -61,20 +61,28 @@ function Branding() {
                     <Table borderless className= 'justify-content-center'>
                   <tbody>
                     <tr>
-                      <th><a href='' style={{textDecoration:'none', color:'#e4b85d'}}>Logo White</a></th>
+                      <th><a href='../../assets/img/branding-dir/logo-white.png'>
+                        <img src={require('../../assets/img/branding-dir/logo-white.png')} style={{width:'100px'}}></img>
+                        </a></th>
                       <th><a href='' style={{textDecoration:'none', color:'#e4b85d'}}>512 x 512 (w)</a></th>
                       <th><a href=''style={{textDecoration:'none', color:'#e4b85d'}} >48 x 48 (B)</a></th>
                     </tr>
+
+
                     <tr>
                       <th> <a href='' style={{textDecoration:'none', color:'#e4b85d'}}>Logo Print White</a></th>
                       <th><a href='' style={{textDecoration:'none', color:'#e4b85d'}}>144 x 144 (W)</a></th>
                       <th><a href='' style={{textDecoration:'none', color:'#e4b85d'}}>96 x 96 (B)</a></th>
                     </tr>
+
+
                     <tr>
                       <th><a href='' style={{textDecoration:'none', color:'#e4b85d'}}>24 x 24 (W)</a></th>
                       <th><a href='' style={{textDecoration:'none', color:'#e4b85d'}}>1000 x 1000 (W)</a></th>
                       <th><a href='' style={{textDecoration:'none', color:'#e4b85d'}}> 144 x 144 (B) </a></th>
                     </tr>
+
+
                     <tr>
                       <th><a href='' style={{textDecoration:'none', color:'#e4b85d'}}>48 x 48 (W)</a></th>
                       <th><a href='' style={{textDecoration:'none', color:'#e4b85d'}}>Logo black</a></th>

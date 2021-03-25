@@ -210,7 +210,7 @@ function IndexNavbar() {
                 {/* <i className="fab fa-cc-paypal" style={{fontSize:'15px'}}></i>
                 <i className="fas fa-comment-dollar" style={{fontSize:'20px'}}></i> */}
                 <i class="fas fa-donate"style={{fontSize:'20px'}}></i>
-                <p className="d-lg-none d-xl-none">Merchandise</p>
+                <p className="d-lg-none d-xl-none"> Donate</p>
                 </NavLink>
                 <UncontrolledTooltip target="#donate-tooltip">Donate</UncontrolledTooltip>
               </NavItem>

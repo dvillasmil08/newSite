@@ -371,7 +371,9 @@
     }
 
     //inputs
-    @include input-coloured-bg($opacity-5, $white-color, $white-color, $transparent-bg, $opacity-1, $opacity-2);
+    @include input-coloured-bg($opacity-5, 
+    $white-color, 
+    $white-color, $transparent-bg, $opacity-1, $opacity-2);
 
     //buttons
     .btn[class*="btn-outline-"] {

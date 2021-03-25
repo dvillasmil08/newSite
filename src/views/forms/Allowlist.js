@@ -44,7 +44,7 @@ function wordCounter(val){
                
                 {/* Breadcrumb */}
                 <div>
-                <p><a href='/index' 
+                <p><a href='/' 
                 style={{textDecoration:'none', color:'grey'}}
                 >HOME / </a>
                 <span style={{color:'#e4b85d'}}>ALLOWLIST APPLICATION</span></p>
