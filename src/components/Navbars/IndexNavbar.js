@@ -106,8 +106,10 @@ function IndexNavbar() {
 
               <DropdownItem tag='a' href='/rules'>Rules</DropdownItem>
 
-              <Modal isOpen={modal1} toggle={() => setModal1(false)}>
-                <div className="modal-header justify-content-center">
+              <Modal isOpen={modal1} toggle={() => setModal1(false)}
+              style={{color:'gray'}}
+              >
+                <div className="modal-header justify-content-center" style={{backgroundColor:'#050b0b'}}>
                   <button
                     className="close"
                     type="button"
@@ -117,13 +119,15 @@ function IndexNavbar() {
                   </button>
                   <h7 className="title text-center">
                   Giving money to the server is never required but greatly appreciated. Any money sent will be used help us cover server costs.
-                  If you would like to help cover those costs you can send money via Paypal to Donations@wildrp.com for a one time payment or sign up for a reoccurring subscription via the links below: 
+                  Donations will open a channel where you can voice your suggestions to the server and it will NOT accelerate your application.
+                  If you would like to help cover those costs you can send money via Paypal to Donations@wildrp.com.<br></br><br></br>
+                  To sign up for a monthly subscription use the links below: 
 
                   </h7>
                 </div>
-                <ModalBody>
-                <Table borderless className= 'justify-content-center'>
-                  <tbody>
+                <ModalBody style={{backgroundColor:'#050b0b'}}>
+                <Table borderless className= 'justify-content-center' >
+                  <tbody style={{textAlign:'center'}}>
                     <tr>
                       <th><a href='https://py.pl/1F4tPfiddgM' style={{textDecoration:'none', color:'#e4b85d'}}>$5 USD</a></th>
                       <th><a href='https://py.pl/3z5RF' style={{textDecoration:'none', color:'#e4b85d'}}>$30 USD</a></th>
@@ -147,10 +151,11 @@ function IndexNavbar() {
                   </tbody>
               </Table>
                 </ModalBody>
-                <div className="modal-footer justify-content-md-center text-center">
-                  <h7>
+                <div className="modal-footer justify-content-md-center text-center" style={{backgroundColor:'#050b0b'}}>
+                  <h7 className="title text-center">
                   If you have subscribed monthly and wish to cancel your subscription you must do so through the 
-                  <a href='https://www.paypal.com/us/smarthelp/article/how-do-i-cancel-a-billing-agreement,-automatic-recurring-payment-or-subscription-on-paypal-faq2254'> Paypal website.</a>
+                  <a href='https://www.paypal.com/us/smarthelp/article/how-do-i-cancel-a-billing-agreement,-automatic-recurring-payment-or-subscription-on-paypal-faq2254'
+                  style={{textDecoration:'none', color:'#e4b85d'}}> Paypal website.</a>
                   </h7>
                 </div>
               </Modal>
@@ -202,8 +207,9 @@ function IndexNavbar() {
                 onClick={() => setModal1(true)}
                 id='donate-tooltip'
                 >
-                <i className="fab fa-cc-paypal" style={{fontSize:'15px'}}></i>
-                <i className="fas fa-comment-dollar" style={{fontSize:'20px'}}></i>
+                {/* <i className="fab fa-cc-paypal" style={{fontSize:'15px'}}></i>
+                <i className="fas fa-comment-dollar" style={{fontSize:'20px'}}></i> */}
+                <i class="fas fa-donate"style={{fontSize:'20px'}}></i>
                 <p className="d-lg-none d-xl-none">Merchandise</p>
                 </NavLink>
                 <UncontrolledTooltip target="#donate-tooltip">Donate</UncontrolledTooltip>

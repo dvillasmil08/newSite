@@ -225,16 +225,16 @@
   transition: margin-left 0.5s;
 }
 .bootstrap-switch.bootstrap-switch-inverse .bootstrap-switch-handle-on {
-  border-bottom-left-radius: 0;
-  border-top-left-radius: 0;
-  border-bottom-right-radius: 3px;
-  border-top-right-radius: 3px;
+  // border-bottom-left-radius: 0;
+  // border-top-left-radius: 0;
+  // border-bottom-right-radius: 3px;
+  // border-top-right-radius: 3px;
 }
 .bootstrap-switch.bootstrap-switch-inverse .bootstrap-switch-handle-off {
-  border-bottom-right-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
+  // border-bottom-right-radius: 0;
+  // border-top-right-radius: 0;
+  // border-bottom-left-radius: 3px;
+  // border-top-left-radius: 3px;
 }
 .bootstrap-switch.bootstrap-switch-focused {
   // border-color: #66afe9;
