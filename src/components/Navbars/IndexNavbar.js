@@ -27,13 +27,13 @@ function IndexNavbar() {
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
-        document.documentElement.scrollTop > 399 ||
-        document.body.scrollTop > 399
+        document.documentElement.scrollTop > 19 ||
+        document.body.scrollTop > 19
       ) {
         setNavbarColor("");
       } else if (
-        document.documentElement.scrollTop < 400 ||
-        document.body.scrollTop < 400
+        document.documentElement.scrollTop < 20 ||
+        document.body.scrollTop < 20
       ) {
         setNavbarColor("navbar-transparent");
       }
