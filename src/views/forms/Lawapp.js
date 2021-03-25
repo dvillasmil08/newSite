@@ -37,7 +37,7 @@ function Law() {
         <div className="section" style={{backgroundImage:`url(${BackgroundImage})`}}>
         <Container>
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
-                <h2 className="" style={{color:'white'}}>LAW APPLICATION</h2>
+                <h2 className="" style={{color:'white',marginTop:'8rem'}}>LAW APPLICATION</h2>
 
                 <div>
                 <p>

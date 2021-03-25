@@ -33,7 +33,7 @@ function Privacy() {
         <div className="section" style={{backgroundImage:`url(${BackgroundImage})`}}>
           
            
-              <Col className="ml-auto mr-auto " md="8" style={{color:'white'}}>
+              <Col className="ml-auto mr-auto " md="8" style={{color:'white',marginTop:'8rem'}}>
                 <h2 className="" >PRIVACY POLICY</h2>
 
                 <div>

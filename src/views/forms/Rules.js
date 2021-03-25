@@ -35,7 +35,7 @@ function Rules() {
             <Container >
             <Row className="" style={{color:'white'}}>
               <Col className="ml-auto mr-auto " md="12">
-                <h2 className="" >SERVER RULES</h2>
+                <h2 className="" style={{marginTop:'8rem'}}>SERVER RULES</h2>
 
                 <div>
                 <p><a href='/index' style={{textDecoration:'none', color:'grey'}}>HOME / </a>

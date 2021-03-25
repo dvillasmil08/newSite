@@ -33,7 +33,6 @@ import Banappeal from "views/forms/Banappeal";
 import Staff from "views/forms/Staff";
 import Devapp from "views/forms/Devapp";
 import Lawapp from "views/forms/Lawapp";
-import Streamapp from "views/forms/Streamapp";
 import Branding from "views/forms/Branding";
 import Rules from "views/forms/Rules";
 import Privacy from "views/forms/Privacy";
@@ -54,16 +53,16 @@ ReactDOM.render(
         <Switch>
             <Route exact path="/" component={Index} />
         
-            <Route exact path="/bug" component={Bugreport} />
-            <Route exact path="/report" component={Reportplayer} />
-            <Route exact path="/appeal" component={Banappeal} />
-            
             <Route exact path="/allowlist" component={Allowlist} />
             <Route exact path="/staff" component={Staff} />
             <Route exact path="/developer" component={Devapp} />
             <Route exact path="/law" component={Lawapp} />
+            
+            <Route exact path="/bug" component={Bugreport} />
+            <Route exact path="/report" component={Reportplayer} />
+            <Route exact path="/appeal" component={Banappeal} />
+            
 
-            <Route exact path="/streamers" component={Streamapp} />
             <Route exact path="/branding" component={Branding} />
             
             <Route exact path="/rules" component={Rules} />

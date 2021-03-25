@@ -83,21 +83,20 @@ function IndexNavbar() {
               >DOWNLOAD LAUNCHER
               </DropdownItem>
               <DropdownItem divider></DropdownItem>
+
+              <DropdownItem tag='a' href='/allowlist'>Allowlist</DropdownItem>
+              <DropdownItem tag='a' href='/staff'>Staff</DropdownItem>
+              <DropdownItem tag='a' href='/developer'>Developer</DropdownItem>
+              <DropdownItem tag='a' href='/law'>Law Enforcement</DropdownItem>         
+                          
+              <DropdownItem divider></DropdownItem>
                           
               <DropdownItem tag='a' href='/bug'>Bug Report</DropdownItem>
               <DropdownItem tag='a' href='/report'>Report Player</DropdownItem>
               <DropdownItem tag='a' href='/appeal'>Ban Appeal</DropdownItem>
-                          
-              <DropdownItem divider></DropdownItem>
-                          
-              <DropdownItem tag='a' href='/allowlist'>Allowlist</DropdownItem>
-              <DropdownItem tag='a' href='/staff'>Staff</DropdownItem>
-              <DropdownItem tag='a' href='/developer'>Developer</DropdownItem>
-              <DropdownItem tag='a' href='/law'>Law Enforcement</DropdownItem>
-
+              
               <DropdownItem divider></DropdownItem>
 
-              {/* <DropdownItem tag='a' href='/streamers'>Streamers</DropdownItem> */}
               
               <DropdownItem tag='a' href='/branding'>Branding</DropdownItem>
 
@@ -106,14 +105,6 @@ function IndexNavbar() {
               {/* <DropdownItem tag='a' href='/privacy'>Privacy Policy</DropdownItem> */}
 
               <DropdownItem tag='a' href='/rules'>Rules</DropdownItem>
-
-              {/* <DropdownItem tag='a' href='https://www.merchgardens.com/collections/WildRP'>Merch</DropdownItem> */}
-              {/* <DropdownItem
-              color="primary"
-              className="mr-1"
-              onClick={() => setModal1(true)}
-              >Donate
-              </DropdownItem> */}
 
               <Modal isOpen={modal1} toggle={() => setModal1(false)}>
                 <div className="modal-header justify-content-center">

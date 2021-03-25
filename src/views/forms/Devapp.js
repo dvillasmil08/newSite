@@ -36,7 +36,7 @@ function Devapp() {
         <div className="main">
         <div className="section" style={{color:'white', backgroundImage:`url(${BackgroundImage})`}}>
         <Container>
-        <Col className="ml-auto mr-auto " md="12" style={{}}>
+        <Col className="ml-auto mr-auto " md="12" style={{marginTop:'8rem'}}>
                 <h2 className="">DEVELOPER APPLICATION</h2>
 
                 <div>

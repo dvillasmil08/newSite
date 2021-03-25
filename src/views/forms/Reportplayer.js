@@ -38,7 +38,7 @@ function Reportplayer() {
         <div className="section" style={{backgroundImage:`url(${BackgroundImage})`}}>
         <Container>
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
-                <h2 className="" style={{color:'white'}}>REPORT PLAYER</h2>
+                <h2 className="" style={{color:'white',marginTop:'8rem'}}>REPORT PLAYER</h2>
 
                 <div>
                 <p><a href='/index' style={{textDecoration:'none', color:'grey'}}>HOME / </a>

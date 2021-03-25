@@ -37,7 +37,7 @@ function Staffapp() {
         <div className="section" style={{color:'white', backgroundImage:`url(${BackgroundImage})`}}>
         <Container>
         <Col className="ml-auto mr-auto " md="12" style={{}}>
-                <h2 className="">STAFF APPLICATION</h2>
+                <h2 className="" style={{marginTop:'8rem'}}>STAFF APPLICATION</h2>
 
                 <div>
                 <p><a href='/index' style={{textDecoration:'none', color:'grey'}}>HOME / </a>
