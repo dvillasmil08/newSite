@@ -6,7 +6,7 @@ import {
   Input,
   Container,
   Col,
-  Label} from "reactstrap";
+  Label, Media} from "reactstrap";
 
 // core components
 // import LandingPageHeader from "components/Headers/LandingPageHeader.js";
@@ -45,17 +45,17 @@ function Law() {
                 <span style={{color:'#e4b85d'}}>LAW APPLICATION</span></p>
                 </div>
                 
-
-                <div style={{padding:'10px', color:"white", border:'1px solid', borderColor:'#e4b85d', backgroundColor: 'rgba(129, 97, 35, 0.1)'}}>
-                <img style={{width:'50px', alignItems:'center'}} src={require('../../assets/img/stamp.png')} alt='stamp'></img>
-                <h4 className="" >Law Enforcement applications are currently available for whitelisted members only.
+                <Media style={{padding:'15px', color:"white", border:'1px solid', borderColor:'#e4b85d', backgroundColor: 'rgba(129, 97, 35, 0.1)'}}>
+                    <Media left>
+                        <Media object src={require('../../assets/img/stamp.png')} style={{width:'50px', marginRight:'10px'}} atl='stamp'/>
+                    </Media>
+                        <Media body>
+                        <p>Law Enforcement applications are currently available for whitelisted members only.
                         Please provide as much detail as possible to the questions below as these positions will be
                         limited and in high demand, and we want to be sure this department provides satisfying roleplay
-                        for our community.
-                    
-                </h4>
-
-                </div>
+                        for our community.</p>
+                        </Media>
+                </Media>
               
         </Col>
         

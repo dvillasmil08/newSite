@@ -6,7 +6,7 @@ import {
   Input,
   Container,
   Col,
-  Label} from "reactstrap";
+  Label, Media} from "reactstrap";
 
 // core components
 // import LandingPageHeader from "components/Headers/LandingPageHeader.js";
@@ -50,20 +50,18 @@ function wordCounter(val){
                 <span style={{color:'#e4b85d'}}>ALLOWLIST APPLICATION</span></p>
                 </div>
                 
-                <div 
-                style={{padding:'10px', color:"white", border:'1px solid', borderColor:'#e4b85d', backgroundColor: 'rgba(129, 97, 35, 0.1)'}}
-                >
-                <img style={{width:'50px', alignItems:'center'}} 
-                src={require('../../assets/img/stamp.png')} alt='stamp'
-                ></img>
-                    <p>We are currently accepting new whitelist applications, fill out our form with as
+                <Media style={{padding:'15px', color:"white", border:'1px solid', borderColor:'#e4b85d', backgroundColor: 'rgba(129, 97, 35, 0.1)'}}>
+                    <Media left>
+                        <Media object src={require('../../assets/img/stamp.png')} style={{width:'50px', marginRight:'10px'}} atl='stamp'/>
+                    </Media>
+                        <Media body>
+                        <p>We are currently accepting new whitelist applications, fill out our form with as
                         much detail as possible to have the best chance at being accepted. To be eligible for whitelist,
                         you <b>MUST</b> be a member of our community <b><a style={{color:'#e4b85d', textDecoration:'none'}} href="https://discord.gg/wildrp">Discord</a></b>,
-                        have microphone suitable for voice-based roleplay, and be 18+
-                    
-                    </p>
-                </div>
-                
+                        have microphone suitable for voice-based roleplay, and be 18+</p>
+                        </Media>
+                </Media>
+
                 <h2 
                 className="" style={{color:'white'}}
                 >GENERAL QUESTIONS</h2>
@@ -112,38 +110,22 @@ function wordCounter(val){
             
         
                 {/* SECOND PART */}
-                <Col 
-                className="ml-auto mr-auto " md="12" 
-                style={{
-                    color:'white',
-                    backgroundColor:'rgba(129, 97, 35, 0.1)',
-                    border:'1px solid',
-                    borderColor:'#e4b85d'
-                    }}>
-                <img style={{width:'50px', alignItems:'center'}} 
-                src={require('../../assets/img/stamp.png')} alt='stamp'
-                ></img>
-                <h4>WildRP has a set standard of roleplay that we expect from our whitelisted members.</h4>
-                <p>Please submit some sort of media that showcases your roleplaying ability. Here are a few examples:</p>
-                    <p>- Voice Acting Reel</p>
-                    <p>- Roleplaying Compilation Video</p>
-                    <p>- Narration or Monologue</p>
-                    <p>You may also submit links to other forms of media not listed. Twitch clips will be accepted, however please be sure they are concise and representative of your roleplay.
-                        Please be creative when submitting your media.</p>
+                <Col className="ml-auto mr-auto " md="12">
+                <Media style={{padding:'15px', color:"white", border:'1px solid', borderColor:'#e4b85d', backgroundColor: 'rgba(129, 97, 35, 0.1)'}}>
+                    <Media left>
+                        <Media object src={require('../../assets/img/stamp.png')} style={{width:'50px', marginRight:'10px'}} atl='stamp'/>
+                    </Media>
+                        <Media body>
+                            <p style={{fontWeight:'bold'}}>WildRP has a set standard of roleplay that we expect from our whitelisted members.</p>
+                            <p>Please submit some sort of media that showcases your roleplaying ability. Here are a few examples:</p>
+                            <p>- Voice Acting Reel</p>
+                            <p>- Roleplaying Compilation Video</p>
+                            <p>- Narration or Monologue</p>
+                            <p>You may also submit links to other forms of media not listed. Twitch clips will be accepted, however please be sure they are concise and representative of your roleplay.
+                             Please be creative when submitting your media.</p>
                     
                     <h2 className="" style={{color:'white'}}>CHARACTER BACKGROUND</h2>
-                    
-                    {/* <div style={{color:'white',
-                    backgroundColor:'rgba(129, 97, 35, 0.1)',
-                    border:'1px solid',
-                    borderColor:'#e4b85d'
-                    }}>
-                    <img style={{width:'50px', alignItems:'center'}} 
-                    src={require('../../assets/img/stamp.png')} alt='stamp'></img>
-                        <p className="">If your character background exceeds 100 words, it may be denied.</p>
-                        <p><b>Words:</b> <span id='wordCount'>0</span></p>
-                    </div> */}
-                        
+    
                         <Label for='charBackground'>Character Background</Label>
                         <Input type='field' name='text' id='charBackground' onChange={(e) => wordCounter(e.target.value)} required />
                 
@@ -189,7 +171,7 @@ function wordCounter(val){
                             size="lg"
                             target="_blank"
                             style={{color:'#e4b85d', fontSize:'20px', marginTop:'110px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
-                          >Submit
+                            >Submit
                             <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button> 
 
@@ -200,6 +182,8 @@ function wordCounter(val){
  
         
         
+                            </Media>
+                    </Media>
         </Col>
         </Container>
         </div>

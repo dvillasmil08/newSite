@@ -75,12 +75,12 @@ function IndexNavbar() {
               MENU
           </DropdownToggle>
 
-            <DropdownMenu aria-labelledby="navbarDropdown">
+            <DropdownMenu aria-labelledby="navbarDropdown" style={{backgroundColor:'#000', color:'#fff'}}>
               <DropdownItem 
               tag='a' 
               href='https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe'
               style={{color:'#e4b85d', textDecoration:'none'}}
-              >DOWNLOAD LAUNCHER
+              >Download Launcher
               </DropdownItem>
               <DropdownItem divider></DropdownItem>
 
