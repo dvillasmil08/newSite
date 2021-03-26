@@ -62,15 +62,11 @@ function wordCounter(val){
                         </Media>
                 </Media>
 
-                <h2 
-                className="" style={{color:'white'}}
-                >GENERAL QUESTIONS</h2>
+                <h3 className="" style={{color:'white'}}>GENERAL QUESTIONS</h3>
         </Col>
         
             <Col
-            className="ml-auto mr-auto " md="12"
-            
-            >
+            className="ml-auto mr-auto " md="12">
                 {/* DISCORD */}
                 <div>
                     <Input 
@@ -124,12 +120,12 @@ function wordCounter(val){
                             <p>You may also submit links to other forms of media not listed. Twitch clips will be accepted, however please be sure they are concise and representative of your roleplay.
                              Please be creative when submitting your media.</p>
                     
-                    <h2 className="" style={{color:'white'}}>CHARACTER BACKGROUND</h2>
+                    <h3 className="" style={{color:'white'}}>CHARACTER BACKGROUND</h3>
     
                         <Label for='charBackground'>Character Background</Label>
                         <Input type='field' name='text' id='charBackground' onChange={(e) => wordCounter(e.target.value)} required />
                 
-                    <h2 className="" style={{color:'white'}}>OTHER QUESTIONS</h2>
+                    <h3 className="" style={{color:'white'}}>OTHER QUESTIONS</h3>
                     <Label>How did you hear about WildRP (Twitter, Twitch, Google, Facebook, Referral, etc.)</Label>
                         <Input type='field' name='text' id='charBackground' required />
 
@@ -164,15 +160,13 @@ function wordCounter(val){
                         
                     <div><p>By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.</p>
                     <Button
-                            className="btn-round"
-                            // color="info"
-                            
-                            outline
-                            size="lg"
-                            target="_blank"
-                            style={{color:'#e4b85d', fontSize:'20px', marginTop:'110px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
-                            >Submit
-                            <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
+                        className="btn-round"
+                        outline
+                        size="lg"
+                        target="_blank"
+                        style={{color:'#e4b85d', fontSize:'20px', marginTop:'110px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
+                        >Submit
+                        <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button> 
 
 

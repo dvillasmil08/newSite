@@ -41,7 +41,7 @@ function Law() {
 
                 <div>
                 <p>
-                  <a href='/index' style={{textDecoration:'none', color:'grey'}}>HOME / </a>
+                  <a href='/' style={{textDecoration:'none', color:'grey'}}>HOME / </a>
                 <span style={{color:'#e4b85d'}}>LAW APPLICATION</span></p>
                 </div>
                 
@@ -57,9 +57,10 @@ function Law() {
                         </Media>
                 </Media>
               
+                <h3 className="" style={{color:'white'}}>QUESTION #1</h3>
         </Col>
+        <Col className="ml-auto mr-auto " md="12">
         
-                <h2 className="" style={{color:'white'}}>QUESTION #1</h2>
                 {/* DISCORD */}
                 <div>
                     <Input type='field' name='text' id='discordId' placeholder='Discord ID Name#1234' required/>
@@ -77,15 +78,15 @@ function Law() {
             
                 {/* Time Zone */}
                 <div><Input type='field' name='text' id='timeZone' placeholder='Time Zone'required /></div>
-            
+          </Col>
         
         {/* SECOND PART */}
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
-                <h2 className="" style={{color:'white'}}>QUESTION #2</h2>
-                <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
+                <h3 className="" style={{color:'white'}}>QUESTION #2</h3>
+              
                 
                 <div>
-                         <Label for='position'>Do you have past Law Enforcement experience? If, for how long?</Label>
+                        <Label for='position'>Do you have past Law Enforcement experience? If, for how long?</Label>
                         <Input type='field' name='text' id='position' placeholder=''required />
                     
                         <Label for='anyBan'>Do you have past LEO roleplay experience? If so, for how long?</Label>
@@ -114,6 +115,7 @@ function Law() {
                     
                 
         </Col>
+        <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
                     <Recaptcha
                     sitekey="6LfHY8QUAAAAANhkFVCaUI2gl9Te5phqd5VO6WEA"
                     render="explicit"
@@ -122,25 +124,27 @@ function Law() {
 
                     
 
-                    <div><p>By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.</p>
+                    <div>
+                      <p>By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.</p>
                     </div>
                     <div>
                         
-                            <Button
-                            className="btn-round"
-                            // color="info"
-                            href="https://discord.gg/kagKhnW"
-                            outline
-                            size="lg"
-                            target="_blank"
-                            style={{color:'#e4b85d', fontSize:'20px', marginTop:'110px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
-                          >Submit
-                            <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='...'></img>
-                            </Button>
+                  <Button
+                  className="btn-round"
+                  // color="info"
+                  href="https://discord.gg/kagKhnW"
+                  outline
+                  size="lg"
+                  target="_blank"
+                  style={{color:'#e4b85d', fontSize:'20px', marginTop:'110px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
+                  >Submit
+                  <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='...'></img>
+                  </Button>
                         
                     </div>
                 
         </Col>
+        
         </Container>
         </div>
 

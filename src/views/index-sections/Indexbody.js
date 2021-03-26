@@ -37,9 +37,8 @@ function Indexbody() {
           ref={pageHeader}
         ></div>
         
-          <div className="content-center">
-            {/* <h1 className="h1-seo" style={{color:'#e4b85d', fontSize:'100px'}}>A NEW DAY</h1>
-            <h1 className="h1-seo"style={{color:'#e4b85d', fontSize:'100px'}}>IS DAWNING</h1> */}
+          <div 
+          className="content-center">
           <Row className="justify-content-md-center">
           <img
               alt="..."
@@ -55,13 +54,15 @@ function Indexbody() {
               </h5>
             </Col>
             <Col className="text-center" lg="8" md="12">
-            <Button 
-            className="btn-round" 
-            color="default" 
-            outline type="button"
-            style={{color:'#e4b85d'}}>
-                Allowlist Application
-              </Button>
+            <Button
+              className="btn-round"
+              outline
+              size="lg"
+              target="_blank"
+              style={{color:'#e4b85d', fontSize:'20px', marginBottom:'60px', background:'transparent', justifyContent:'center'}}
+              >Allowlist Application
+              <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
+                    </Button>
             </Col>
           </Row>
           </div>
@@ -69,9 +70,8 @@ function Indexbody() {
       </div>
       <div
         className="section section-download"
-        data-background-color="black"
         id="download-section"
-        style={{backgroundColor:'#050b0b'}}
+        style={{backgroundColor:'#050b0b', color:'white'}}
       >
         <Container>
           <Row className="justify-content-md-center">
@@ -102,16 +102,16 @@ function Indexbody() {
             </Col>
             <Col md="12">
             <Button
-                className="btn-round" 
-                // color="default" 
-                outline type="button"
-                style={{color:'#e4b85d'}}
-                href="https://discord.gg/kagKhnW"
-              >
-                Launch Discord
-                <i src={require('../../assets/img/wheel.svg')}></i>
-              </Button>
-
+              href="https://discord.gg/kagKhnW"
+              className="btn-round"
+              outline
+              size="lg"
+              target="_blank"
+              style={{color:'#e4b85d', fontSize:'20px', marginBottom:'60px', background:'transparent', justifyContent:'center'}}
+              >Launch discord
+              <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
+            </Button>
+              
             </Col>
           </Row>
           <Row className="justify-content-md-center text-center mt-5">

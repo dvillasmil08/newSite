@@ -47,15 +47,16 @@ function Staffapp() {
 
 
                
-                <h4 className="" style={{color:'white'}}>The Staff team at WildRP has learned that running a brand new style of total game modification roleplay community 
-                        is difficult and challenging work. The team often requires more help then we have available, and may be looking for 
-                        new team members to assist the community. Support Staff are the frontline of WildRP and everything we do starts with 
-                        them. Support Staff must be able to adhere to the following criteria;
-                        
-                    <p>1. All staff members are expected to conduct themselves professionally and within WildRPs rules and guidelines at 
-	                    all times when publicly representing the server and staff team.</p>
+                <p style={{color:'white'}}>
+                  The Staff team at WildRP has learned that running a brand new style of total game modification roleplay community 
+                  is difficult and challenging work. The team often requires more help then we have available, and may be looking for 
+                  new team members to assist the community. Support Staff are the frontline of WildRP and everything we do starts with 
+                  them. Support Staff must be able to adhere to the following criteria:     
+                </p>
+                  <p>1. All staff members are expected to conduct themselves professionally and within WildRPs rules and guidelines at 
+	                  all times when publicly representing the server and staff team.</p>
 
-                    <p>2. All staff must be calm, strong, clear, well equipped communicators.</p>
+                  <p>2. All staff must be calm, strong, clear, well equipped communicators.</p>
 
 	                <p>3. Support staff must utilize WildRP’s rules, Discord/Twitch ToS, and common sense to moderate the community.</p>
 
@@ -65,15 +66,15 @@ function Staffapp() {
 
 	                <p>6. Support staff must be available to cover at two potential member interview time slots per week.</p> 
 
-                    <p>If you fulfil the above criteria and are a white-listed community member in good standing and want to help out, please feel 
-                        free to apply for a support staff role by filling out the application below!</p>
+                  <p>If you fulfil the above criteria and are a white-listed community member in good standing and want to help out, please feel 
+                    free to apply for a support staff role by filling out the application below!</p>
 
                         
-                        </h4>
                
         </Col>
-       
-                <h2 className="">QUESTION #1.</h2>
+        <Col
+            className="ml-auto mr-auto " md="12">
+                <h3 className="">QUESTION #1.</h3>
             
                 {/* discord id */}
                 <div>
@@ -83,15 +84,13 @@ function Staffapp() {
             
                 {/* Age */}
                 <div><Input type='field' name='text' id='age' placeholder='Age' required/></div>
-            
+          </Col>
             
         {/* SECOND PART */}
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
-                <h2 className="" style={{color:'white'}}>QUESTION #2</h2>
-                    <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
-                {/* <div style={{backgroundImage:`url(${AlertImage})`}}> */}
+                <h3 className="" style={{color:'white'}}>QUESTION #2</h3>
                     <div>
-                         <Label for='position'>What kind of position would you like to apply for?</Label>
+                        <Label for='position'>What kind of position would you like to apply for?</Label>
                         <Input type='field' name='text' id='position' placeholder=''required />
                     
                         <Label for='anyBan'>Have you received any warnings or bans in WildRPs discord or game servers?</Label>
@@ -120,10 +119,6 @@ function Staffapp() {
 
                     </div>
 
-                    
-                {/* </div> */}
-        </Col>
-
 
 
                     <Recaptcha
@@ -141,12 +136,10 @@ function Staffapp() {
                             size="lg"
                             target="_blank"
                             style={{color:'#e4b85d', fontSize:'20px', marginTop:'110px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
-                          >Submit
+                            >Submit
                             <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button>
-                    
-                {/* </div> */}
-        </Col>
+           </Col>
         </Container>
         </div>
 

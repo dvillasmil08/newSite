@@ -1816,7 +1816,8 @@ fieldset[disabled]
   border-radius: 0.25rem;
   padding: 15px 48px; }
   .btn-lg[class*="btn-outline-"] {
-    padding: 14px 47px; }
+    padding: 14px 47px; 
+  }
 
 .btn-sm {
   font-size: 14px;

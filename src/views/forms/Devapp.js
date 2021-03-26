@@ -45,11 +45,13 @@ function Devapp() {
                 </div>
 
                
-                <h4 className="" style={{color:'white'}}>We are always on the lookout for like-minded developers to join our team and help us improve our world. If you are up to the job, please fill in the form below. </h4>
+                <p className="" style={{color:'white'}}>
+                  We are always on the lookout for like-minded developers to join our team and help us improve our world. If you are up to the job, please fill in the form below
+                </p>
                
         </Col>
-       
-                <h2 className="" style={{color:'white'}}>QUESTION #1.</h2>
+        <Col className="ml-auto mr-auto " md="12">
+                <h3 className="" style={{color:'white'}}>QUESTION #1.</h3>
             
                 {/* discord id */}
                 <div>
@@ -59,13 +61,11 @@ function Devapp() {
             
                 {/* Age */}
                 <div><Input type='field' name='text' id='age' placeholder='Age' required/></div>
-            
+        </Col>
             
         {/* SECOND PART */}
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
-                <h2 className="" style={{color:'white'}}>QUESTION #2</h2>
-                    <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
-                
+                <h3 className="" style={{color:'white'}}>QUESTION #2</h3>
                     <div>
                          <Label for='position'>Have you received any warnings or bans in WildRPs discord or game servers?</Label>
                         <Input type='field' name='text' id='position' placeholder=''required />
@@ -91,8 +91,14 @@ function Devapp() {
                     </div>
 
                     
-                
-        </Col>
+                    </Col>
+                      </Container>
+                      </div>
+                      
+              <div className="section" style={{color:'white', backgroundColor:'#050b0b', marginTop:'-100px'}}>
+              <Container>
+
+                    <Col className="ml-auto mr-auto " md="12">
                     <Recaptcha
                     sitekey="6LfHY8QUAAAAANhkFVCaUI2gl9Te5phqd5VO6WEA"
                     render="explicit"
@@ -108,14 +114,12 @@ function Devapp() {
                             size="lg"
                             target="_blank"
                             style={{color:'#e4b85d', fontSize:'20px', marginTop:'110px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
-                          >Submit
+                            >Submit
                             <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button>
-                    
-                
-        </Col>
-        </Container>
-        </div>
+                    </Col>
+                  </Container>
+                  </div>
 
           
         </div>
