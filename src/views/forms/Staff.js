@@ -40,7 +40,7 @@ function Staffapp() {
                 backgroundColor: '#050b0b'
                 }}>
         <Container>
-        <Col className="ml-auto mr-auto " md="12" style={{}}>
+        <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
                 <h2 className="" style={{marginTop:'8rem'}}>STAFF APPLICATION</h2>
 
                 <div>

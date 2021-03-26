@@ -34,7 +34,11 @@ function Law() {
       <div className="wrapper">
         {/* <LandingPageHeader /> */}
         <div className="main">
-        <div className="section" style={{backgroundImage:`url(${BackgroundImage})`}}>
+        <div className="section" 
+          style={{backgroundImage:`url(${BackgroundImage})`,
+                  backgroundRepeat: 'no-repeat',
+                  backgroundColor: '#050b0b'
+                }}>
         <Container>
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
                 <h2 className="" style={{color:'white',marginTop:'8rem'}}>LAW APPLICATION</h2>
