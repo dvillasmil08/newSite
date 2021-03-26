@@ -53,33 +53,33 @@ function Rules() {
                 <p>Personal insults and/or verbal attacks outside of specific roleplay situations and all forms
                		 of harassment are prohibited and will result in a ban.</p>
                 <p>Racism, Homophobia, Transphobia, hate speech, and all forms of targeted derogatory or abusive language will 
-				not be tolerated and will result in a permanent ban.</p>
-                <p>Roleplay, text/voice chat, and general behaviour that violates the <a style={{color:'#e4b85d'}}
+				        not be tolerated and will result in a permanent ban.</p>
+                <p>Roleplay, text/voice chat, and general behaviour that violates the <a style={{color:'#e4b85d', textDecoration:'none'}}
                     		href="https://www.twitch.tv/p/en-gb/legal/terms-of-service/">Twitch Terms of Service (ToS) </a> 
-                		or <a style={{color:'#e4b85d'}} href="https://www.twitch.tv/p/en-gb/legal/community-guidelines/" >Twitch
-                    		Community Guidelines</a> or <a style={{color:'#e4b85d'}} href="https://discord.com/terms/">Discord Terms of Service </a>  
-				is prohibited and will result in a ban. </p>
+                		or <a style={{color:'#e4b85d', textDecoration:'none'}} href="https://www.twitch.tv/p/en-gb/legal/community-guidelines/" >Twitch
+                    		Community Guidelines</a> or <a style={{color:'#e4b85d', textDecoration:'none'}} href="https://discord.com/terms/">Discord Terms of Service </a>  
+				      is prohibited and will result in a ban. </p>
               </Col>
               <Col className="ml-auto mr-auto" md="12">
                 <h3 className="">BASIC COMMUNITY POLICIES</h3>
                 <p>We are an English speaking server, all communication must be primarily conducted via English. 
-				Fluency in English is required to join the community.</p>
+				          Fluency in English is required to join the community.</p>
                 
                 <p>You must be 18 years or older to apply for white-listing to the community. 
-				This is non-negotiable to ensure we are within ToS for all 3rd party applications we utilize. 
-				All characters on the server must be portrayed with a minimum age of 18.</p>
+				            This is non-negotiable to ensure we are within ToS for all 3rd party applications we utilize. 
+				            All characters on the server must be portrayed with a minimum age of 18.</p>
                 
                 <p>You must have a working microphone with no background noise and decent quality overall sound. 
-				Failure to maintain good quality audio will result in application denial or temporary ban until the audio is fixed.</p>
+				            Failure to maintain good quality audio will result in application denial or temporary ban until the audio is fixed.</p>
                 
                 <p>We require all community members to utilize the WildRP Discord for communication and permissions management. 
-				Failure to maintain membership in the Discord server will result in community removal.</p>
+				          Failure to maintain membership in the Discord server will result in community removal.</p>
                 
                 <p>Should disagreements or instances of rule-breaking arise in game all members should attempt to roleplay through them
-				without breaking character. Once the scenario is completed, members may then send in reports to staff. If the previous 
-				is impossible, a WildRP staff member may contacted immediately. Out of character (OOC) arguments will not be tolerated. 
-				If you believe a player has broken a rule submit a report via the Website Report feature rather then 
-				starting an argument.</p>
+				          without breaking character. Once the scenario is completed, members may then send in reports to staff. If the previous 
+				          is impossible, a WildRP staff member may contacted immediately. Out of character (OOC) arguments will not be tolerated. 
+				          If you believe a player has broken a rule submit a report via the Website Report feature rather then 
+				          starting an argument.</p>
 
                 <p>If a person's overall quality of roleplay ability is deemed too low/inconsistent for the server, that person may be placed under staff 
 				review. Subject to staff review any person on the server may receive disciplinary actions up to and including permanent bans for 

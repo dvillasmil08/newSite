@@ -37,21 +37,18 @@ function Staffapp() {
         <div className="section" 
         style={{backgroundImage:`url(${BackgroundImage})`,
                 backgroundRepeat: 'no-repeat',
-                backgroundColor: '#050b0b'
+                backgroundColor: '#050b0b',
+                color:'white'
                 }}>
         <Container>
-        <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
+        <Col className="ml-auto mr-auto " md="12">
                 <h2 className="" style={{marginTop:'8rem'}}>STAFF APPLICATION</h2>
 
                 <div>
                 <p><a href='/index' style={{textDecoration:'none', color:'grey'}}>HOME / </a>
                 <span style={{color:'#e4b85d'}}>STAFF APPLICATION</span></p>
-                </div>
-                
-
-
-               
-                <p style={{color:'white'}}>
+                </div>            
+                <p>
                   The Staff team at WildRP has learned that running a brand new style of total game modification roleplay community 
                   is difficult and challenging work. The team often requires more help then we have available, and may be looking for 
                   new team members to assist the community. Support Staff are the frontline of WildRP and everything we do starts with 
@@ -72,9 +69,7 @@ function Staffapp() {
 
                   <p>If you fulfil the above criteria and are a white-listed community member in good standing and want to help out, please feel 
                     free to apply for a support staff role by filling out the application below!</p>
-
-                        
-               
+   
         </Col>
         <Col
             className="ml-auto mr-auto " md="12">
@@ -91,8 +86,8 @@ function Staffapp() {
           </Col>
             
         {/* SECOND PART */}
-        <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
-                <h3 className="" style={{color:'white'}}>QUESTION #2</h3>
+        <Col className="ml-auto mr-auto " md="12">
+                <h3 className="">QUESTION #2</h3>
                     <div>
                         <Label for='position'>What kind of position would you like to apply for?</Label>
                         <Input type='field' name='text' id='position' placeholder=''required />
@@ -123,8 +118,6 @@ function Staffapp() {
 
                     </div>
 
-
-
                     <Recaptcha
                     sitekey="6LfHY8QUAAAAANhkFVCaUI2gl9Te5phqd5VO6WEA"
                     render="explicit"
@@ -134,8 +127,6 @@ function Staffapp() {
                     </div>   
                     <Button
                             className="btn-round"
-                            // color="info"
-                            
                             outline
                             size="lg"
                             target="_blank"
