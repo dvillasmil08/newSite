@@ -48,9 +48,9 @@ function Bugreport() {
                 
                 <h4 className="description" style={{color:'white'}}>Please help us by taking a few minutes to fill out the form bellow if you have experienced a bug on one of our servers. Please make sure you fill out everything as in-depth as possible.</h4>
                 
+          <h3 className="" style={{color:'white'}}>QUESTION #1.</h3>
         </Col>
-        <h2 className="description" style={{color:'white'}}>QUESTION #1.</h2>
-       
+        <Col className="ml-auto mr-auto " md="12">
             
                 {/* DISCORD */}
                 <div>
@@ -64,10 +64,10 @@ function Bugreport() {
             
                 {/* screenshot */}
                 <div><Input type='field' name='text' id='screenshot' placeholder='Screenshot #1 (imgur/gyaso link)'required /></div>
-            
+        </Col>
         {/* SECOND PART */}
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
-                <h2 className="description" style={{color:'white'}}>QUESTION #2</h2>
+                <h3 className="description" style={{color:'white'}}>QUESTION #2</h3>
                
                     <div>
                          <Label for='bugDescription'>What is the bug? Please make sure you are as detailed as possible</Label>
@@ -88,28 +88,18 @@ function Bugreport() {
                         
                     <div><p>By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.</p>
                     <Button
-                            className="btn-round"
-                            // color="info"
-                            
-                            outline
-                            size="lg"
-                            target="_blank"
-                            style={{color:'#e4b85d', fontSize:'20px', marginTop:'110px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
-                          >Submit
-                            <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
+                      className="btn-round"
+                      outline
+                      size="lg"
+                      target="_blank"
+                      style={{color:'#e4b85d', fontSize:'20px', marginTop:'110px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
+                      >Submit
+                      <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button> 
-
-
-
-
                     </div>
         </Col>
-                    
-                
         </Container>
-        </div>
-
-          
+        </div>  
         </div>
         <DarkFooter />
     </div>

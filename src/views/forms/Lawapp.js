@@ -57,9 +57,9 @@ function Law() {
                         </Media>
                 </Media>
               
-                <h3 className="" style={{color:'white'}}>QUESTION #1</h3>
         </Col>
         <Col className="ml-auto mr-auto " md="12">
+                <h3 className="" style={{color:'white'}}>QUESTION #1</h3>
         
                 {/* DISCORD */}
                 <div>
@@ -144,11 +144,8 @@ function Law() {
                     </div>
                 
         </Col>
-        
         </Container>
-        </div>
-
-          
+        </div>   
         </div>
         <DarkFooter />
     </div>

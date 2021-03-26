@@ -52,9 +52,9 @@ function Banappeal() {
                 process can take a little while.</h4>
                
         </Col>
-        <h2 className="" style={{color:'white'}}>QUESTION #1.</h2>
        
-            
+        <Col className="ml-auto mr-auto " md="12">
+        <h3 className="" style={{color:'white'}}>QUESTION #1.</h3>
                 {/* discord id */}
                 <div>
                     <Input type='field' name='text' id='discordId' placeholder='Discord ID Name#1234' required/>
@@ -72,10 +72,11 @@ function Banappeal() {
     
                 {/* ban reason */}
                 <div><Input type='field' name='text' id='banReason' placeholder='Ban Reason'required /></div>
-            
+        </Col> 
+
         {/* SECOND PART */}
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
-                <h2 className="" style={{color:'white'}}>QUESTION #2</h2>
+                <h3 className="" style={{color:'white'}}>QUESTION #2</h3>
                
                     <div>
                         <Label for='brokenRule'>Why you feel you should be unbanned</Label>
@@ -101,18 +102,10 @@ function Banappeal() {
                           >Submit
                             <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button> 
-
-
-
-
-                    </div>
-                    
-                
+                    </div>      
         </Col>
         </Container>
-        </div>
-
-          
+        </div>  
         </div>
         <DarkFooter />
     </div>

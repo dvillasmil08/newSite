@@ -49,10 +49,10 @@ function Reportplayer() {
                
                 <h4 className=""style={{color:'white'}}>If a player has broken our rules please give us as much information as you can. Including screenshots and a real explanation of what happened.</h4>
              
+        <h3 className=""style={{color:'white'}}>QUESTION #1.</h3>
         </Col>
-        <h2 className=""style={{color:'white'}}>QUESTION #1.</h2>
        
-            
+        <Col className="ml-auto mr-auto " md="12">
                 {/* PLAYER ID */}
                 <div>
                     <Input type='field' name='text' id='playerId' placeholder='Their Player ID' required/></div>
@@ -65,10 +65,10 @@ function Reportplayer() {
             
                 {/* rule broken */}
                 <div><Input type='field' name='text' id='ruleBroken' placeholder='Specific rules broken'required /></div>
-            
+        </Col>
         {/* SECOND PART */}
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
-                <h2 className="" style={{color:'white'}}>QUESTION #2</h2>
+                <h3 className="" style={{color:'white'}}>QUESTION #2</h3>
                 
                     <div>
                          <Label for='brokenRule'>How did the player break the rules?</Label>

@@ -40,7 +40,7 @@ function wordCounter(val){
         <div className="section "style={{backgroundImage:`url(${BackgroundImage})`}} >
         <Container>
         <Col className="ml-auto mr-auto " md="12" >
-        <h2 className="" style={{color:'white', marginTop:'8rem'}}>Allowlist Application</h2>
+        <h2 className="" style={{color:'white', marginTop:'8rem'}}>ALLOWLIST APPLICATION</h2>
                
                 {/* Breadcrumb */}
                 <div>
@@ -62,11 +62,11 @@ function wordCounter(val){
                         </Media>
                 </Media>
 
-                <h3 className="" style={{color:'white'}}>GENERAL QUESTIONS</h3>
         </Col>
         
             <Col
             className="ml-auto mr-auto " md="12">
+            <h3 className="" style={{color:'white'}}>GENERAL QUESTIONS</h3>
                 {/* DISCORD */}
                 <div>
                     <Input 

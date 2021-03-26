@@ -108,14 +108,14 @@ function Staffapp() {
                         <Label for='weekhour'>How much time would you be able to volunteer per week</Label>
                         <Input type='field' name='text' id='weekhour' placeholder='' required />
 
-                        <Label for='example'>What value do you think you would provide to the WildRP community</Label>
-                        <Input type='field' name='text' id='example' placeholder='' required />
+                        <Label for='yourvalue'>What value do you think you would provide to the WildRP community</Label>
+                        <Input type='field' name='text' id='yourvalue' placeholder='' required />
 
-                        <Label for='example'>If you could change something about the WildRP community, what would it be</Label>
-                        <Input type='field' name='text' id='example' placeholder='' required />
+                        <Label for='bring'>If you could change something about the WildRP community, what would it be</Label>
+                        <Input type='field' name='text' id='bring' placeholder='' required />
 
-                        <Label for='example'>Any other comments?</Label>
-                        <Input type='field' name='text' id='example' placeholder='' required />
+                        <Label for='comments'>Any other comments?</Label>
+                        <Input type='field' name='text' id='comments' placeholder='' required />
 
                     </div>
 
