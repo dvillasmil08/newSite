@@ -126,29 +126,29 @@ function wordCounter(val){
                         <Input type='field' name='text' id='charBackground' onChange={(e) => wordCounter(e.target.value)} required />
                 
                     <h3 className="" style={{color:'white'}}>OTHER QUESTIONS</h3>
-                    <Label>How did you hear about WildRP (Twitter, Twitch, Google, Facebook, Referral, etc.)</Label>
-                        <Input type='field' name='text' id='charBackground' required />
+                    <Label for='media'>How did you hear about WildRP (Twitter, Twitch, Google, Facebook, Referral, etc.)</Label>
+                        <Input type='field' name='text' id='media' required />
 
-                    <p className="">Name 3 one word characteristics of a good roleplayer.</p>
-                        <Input type='field' name='text' id='charBackground' required />
+                    <Label for="threeChara">Name 3 one word characteristics of a good roleplayer.</Label>
+                        <Input type='field' name='text' id='threeChara' required />
 
-                    <p className="">A sheriff, a criminal, and a civilian are all in one area. Please describe a scenario that you think would be unique, and entertaining for all three of these individuals to partake in simultaneously.</p>
-                        <Input type='field' name='text' id='charBackground' required />
+                    <Label for="scenario">A sheriff, a criminal, and a civilian are all in one area. Please describe a scenario that you think would be unique, and entertaining for all three of these individuals to partake in simultaneously.</Label>
+                        <Input type='field' name='text' id='scenario' required />
                     
-                    <p className="">Do you have past roleplay experience?</p>
-                        <Input type='field' name='text' id='charBackground' required />
+                    <Label for="rpExp">Do you have past roleplay experience?</Label>
+                        <Input type='field' name='text' id='rpExp' required />
 
-                    <p className="">What is RDM and can you provide and example.</p>
-                        <Input type='field' name='text' id='charBackground' required />
+                    <Label for="rdm">What is RDM and can you provide and example.</Label>
+                        <Input type='field' name='text' id='rdm' required />
                         
-                    <p className="">When is acceptable to break character.</p>
-                        <Input type='field' name='text' id='charBackground' required />
+                    <Label for="ooc">When is acceptable to break character.</Label>
+                        <Input type='field' name='text' id='ooc' required />
                         
-                    <p className="">What is the definition of Metagaming.</p>
-                        <Input type='field' name='text' id='charBackground' required />
+                    <Label for="metagaming">What is the definition of Metagaming.</Label>
+                        <Input type='field' name='text' id='metagaming' required />
                     
-                    <p className="">If you could have two super powers and had to use them hand in hand, what woukd they be and why? Also, what would be your kryptonite?</p>
-                        <Input type='field' name='text' id='charBackground' required />
+                    <Label for="powers">If you could have two super powers and had to use them hand in hand, what woukd they be and why? Also, what would be your kryptonite?</Label>
+                        <Input type='field' name='text' id='powers' required />
 
 
                     
