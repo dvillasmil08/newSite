@@ -40,13 +40,13 @@ html.nucleo-icons-page-styles {
   border-spacing: 0;
 }
 /* --------------------------------
- Nucleo Outline Web Font - nucleoapp.com/
- License - nucleoapp.com/license/
- Created using IcoMoon - icomoon.io
- -------------------------------- */
+Nucleo Outline Web Font - nucleoapp.com/
+License - nucleoapp.com/license/
+Created using IcoMoon - icomoon.io
+-------------------------------- */
 /* --------------------------------
- Primary style
- -------------------------------- */
+Primary style
+-------------------------------- */
 .nucleo-icons-page-styles *, .nucleo-icons-page-styles *::after, .nucleo-icons-page-styles *::before {
   box-sizing: border-box;
 }
@@ -64,8 +64,8 @@ html.nucleo-icons-page-styles {
   text-decoration: none;
 }
 /* --------------------------------
- Main components
- -------------------------------- */
+Main components
+-------------------------------- */
 .nucleo-icons-page-styles header {
   text-align: center;
   padding: 120px 0 0;
@@ -165,8 +165,8 @@ html.nucleo-icons-page-styles {
   }
 }
 /* --------------------------------
- Smart fixed navigation
- -------------------------------- */
+Smart fixed navigation
+-------------------------------- */
 .nucleo-icons-page-styles {
   /* mobile first */
 }
@@ -204,6 +204,7 @@ html.nucleo-icons-page-styles {
 }
 .nucleo-icons-page-styles #cd-nav ul li {
   /* Force Hardware Acceleration in WebKit */
+  background-color: red;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   display: block;

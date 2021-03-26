@@ -34,7 +34,11 @@ function Staffapp() {
       <div className="wrapper">
         {/* <LandingPageHeader /> */}
         <div className="main">
-        <div className="section" style={{color:'white', backgroundImage:`url(${BackgroundImage})`}}>
+        <div className="section" 
+        style={{backgroundImage:`url(${BackgroundImage})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundColor: '#050b0b'
+                }}>
         <Container>
         <Col className="ml-auto mr-auto " md="12" style={{}}>
                 <h2 className="" style={{marginTop:'8rem'}}>STAFF APPLICATION</h2>
@@ -135,7 +139,7 @@ function Staffapp() {
                             outline
                             size="lg"
                             target="_blank"
-                            style={{color:'#e4b85d', fontSize:'20px', marginTop:'110px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
+                            style={{color:'#e4b85d', fontSize:'20px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
                             >Submit
                             <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button>

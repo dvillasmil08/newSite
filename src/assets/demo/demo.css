@@ -1,5 +1,6 @@
 .tim-row {
   margin-bottom: 20px;
+  
 }
 
 .tim-white-buttons {
@@ -250,7 +251,7 @@
   }
 }
 
-/*.separator{
+.separator{
     content: "Separator";
     color: #FFFFFF;
     display: block;
@@ -265,7 +266,7 @@
 }
 .separator.separator-gray{
     background-color: #EEEEEE;
-}*/
+}
 
 .social-buttons-demo .btn {
   margin-right: 5px;

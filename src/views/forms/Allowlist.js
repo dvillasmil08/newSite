@@ -14,6 +14,7 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 import BackgroundImage from '../../assets/img/cover.jpg';
 import IndexNavbar from "components/Navbars/IndexNavbar";
 import Recaptcha from 'react-recaptcha';
+import { resolveProjectReferencePath } from "typescript";
 
 function Allowlist() {
   React.useEffect(() => {
@@ -37,10 +38,15 @@ function wordCounter(val){
       <IndexNavbar />
       <div className="wrapper">
         <div className="main " >
-        <div className="section "style={{backgroundImage:`url(${BackgroundImage})`}} >
+        <div className="section "
+        style={{backgroundImage:`url(${BackgroundImage})`,
+                backgroundRepeat: 'no-repeat',
+                backgroundColor: '#050b0b'
+                }}>
+                    
         <Container>
         <Col className="ml-auto mr-auto " md="12" >
-        <h2 className="" style={{color:'white', marginTop:'8rem'}}>ALLOWLIST APPLICATION</h2>
+        <h2 style={{color:'white', marginTop:'8rem'}}>ALLOWLIST APPLICATION</h2>
                
                 {/* Breadcrumb */}
                 <div>
@@ -120,12 +126,12 @@ function wordCounter(val){
                             <p>You may also submit links to other forms of media not listed. Twitch clips will be accepted, however please be sure they are concise and representative of your roleplay.
                              Please be creative when submitting your media.</p>
                     
-                    <h3 className="" style={{color:'white'}}>CHARACTER BACKGROUND</h3>
+                    <h3 style={{color:'white'}}>CHARACTER BACKGROUND</h3>
     
                         <Label for='charBackground'>Character Background</Label>
                         <Input type='field' name='text' id='charBackground' onChange={(e) => wordCounter(e.target.value)} required />
                 
-                    <h3 className="" style={{color:'white'}}>OTHER QUESTIONS</h3>
+                    <h3 style={{color:'white'}}>OTHER QUESTIONS</h3>
                     <Label for='media'>How did you hear about WildRP (Twitter, Twitch, Google, Facebook, Referral, etc.)</Label>
                         <Input type='field' name='text' id='media' required />
 
@@ -168,16 +174,9 @@ function wordCounter(val){
                         >Submit
                         <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button> 
-
-
-
-
                     </div>
- 
-        
-        
-                            </Media>
                     </Media>
+                </Media>
         </Col>
         </Container>
         </div>

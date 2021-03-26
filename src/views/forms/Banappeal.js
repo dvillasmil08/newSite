@@ -79,7 +79,7 @@ function Banappeal() {
                 <h3 className="" style={{color:'white'}}>QUESTION #2</h3>
                
                     <div>
-                        <Label for='brokenRule'>Why you feel you should be unbanned</Label>
+                        <Label for='appealReason'>Why you feel you should be unbanned</Label>
                         <Input type='field' name='text' id='appealReason' placeholder=''required />
                     </div>
 
@@ -92,15 +92,13 @@ function Banappeal() {
                         
                     <div><p>By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.</p>
                     <Button
-                            className="btn-round"
-                            // color="info"
-                            
-                            outline
-                            size="lg"
-                            target="_blank"
-                            style={{color:'#e4b85d', fontSize:'20px', marginTop:'110px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
-                          >Submit
-                            <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
+                      className="btn-round"
+                      outline
+                      size="lg"
+                      target="_blank"
+                      style={{color:'#e4b85d', fontSize:'20px', marginBottom:'60px', background:'transparent', height:'', justifyContent:'center'}}
+                      >Submit
+                      <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button> 
                     </div>      
         </Col>

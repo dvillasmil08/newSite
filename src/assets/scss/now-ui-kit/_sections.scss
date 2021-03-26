@@ -1,7 +1,10 @@
 .section{
     padding: 70px 0;
     position: relative;
-    background: $white-color;
+    background-image: url('/src/assets/img/cover.jpg');
+    // background: $backgroundColor;
+    // background-color: red;
+
 
     .row + .category{
         margin-top: $margin-base-vertical;
