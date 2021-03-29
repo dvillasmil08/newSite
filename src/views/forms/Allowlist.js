@@ -6,7 +6,9 @@ import {
   Input,
   Container,
   Col,
-  Label, Media} from "reactstrap";
+  Label, 
+  Media, 
+  Modal, ModalBody, ModalFooter} from "reactstrap";
 
 // core components
 // import LandingPageHeader from "components/Headers/LandingPageHeader.js";
@@ -15,6 +17,7 @@ import BackgroundImage from '../../assets/img/cover.jpg';
 import IndexNavbar from "components/Navbars/IndexNavbar";
 import Recaptcha from 'react-recaptcha';
 import { resolveProjectReferencePath } from "typescript";
+import ModalHeader from "reactstrap/lib/ModalHeader";
 
 function Allowlist() {
   React.useEffect(() => {
@@ -27,11 +30,16 @@ function Allowlist() {
       document.body.classList.remove("landing-page");
       document.body.classList.remove("sidebar-collapse");
     };
+       
 });
 function wordCounter(val){
     
     console.log(val.split(" ").length)
 }
+    // submit modal
+    const [modal1, setModal1] = React.useState(false);
+    
+
 
   return (
     <>
@@ -164,8 +172,11 @@ function wordCounter(val){
                     theme="dark"
                     />  
                         
-                    <div><p>By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.</p>
-                    <Button
+                    <div><h6>By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.</h6>
+                    </div>
+
+                    <Button 
+                        onClick={() => setModal1(true)}
                         className="btn-round"
                         outline
                         size="lg"
@@ -174,8 +185,31 @@ function wordCounter(val){
                         >Submit
                         <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button> 
-                    </div>
-                    </Media>
+                    <Modal isOpen={modal1} ontoggle={() => setModal1(false)} style={{color:'white'}}>
+                        <div style={{backgroundColor:'#050b0b'}}>
+                            
+                        </div>
+                        <ModalHeader className='justify-content-center' style={{backgroundColor:'#050b0b', color:'#e4b85d'}}>
+                            WE GOT THE TELEGRAM
+                        </ModalHeader>
+                        <ModalBody className='text-center' style={{backgroundColor:'#050b0b'}}>
+                            <p>
+                              We will be in touch via Discord
+                            </p>
+                        </ModalBody>
+                        <ModalFooter style={{backgroundColor:'#050b0b'}}>
+                        <Button
+                            tag='a'
+                            href='/'
+                            className="justify-content-end"
+                            onClick={() => setModal1(false)}
+                             style={{color:'#e4b85d', background:'transparent', textDecoration:'none'}}
+                            >Close
+                        </Button>
+                        </ModalFooter>   
+                   </Modal>
+
+                </Media>
                 </Media>
         </Col>
         </Container>

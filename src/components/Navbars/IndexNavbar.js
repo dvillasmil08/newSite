@@ -160,10 +160,6 @@ function IndexNavbar() {
                 </div>
               </Modal>
 
-
-
-
-
             </DropdownMenu>
           </UncontrolledDropdown>
             

@@ -10,7 +10,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 small{
-    font-size: 60%;
+    font-size: 70%;
 }
 
 a{
@@ -62,7 +62,7 @@ h5, .h5 {
 }
 h6, .h6{
     font-size: $font-size-h6;
-    font-weight: $font-weight-bold;
+    // font-weight: $font-weight-bold;
     text-transform: uppercase;
 }
 p{

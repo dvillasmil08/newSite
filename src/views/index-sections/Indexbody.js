@@ -128,10 +128,10 @@ function Indexbody() {
               style={{color:'#e4b85d', fontSize:'20px', marginBottom:'60px', background:'transparent', justifyContent:'center'}}
               >Launch Discord
               <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
-                  </Button>
+              </Button>
               
-                  </Col>
-                  </Row>
+            </Col>
+            </Row>
                   <Row className="justify-content-md-center text-center mt-5">
                   <Col className="ml-auto mr-auto" md="9">
                   <h6 className="description">
