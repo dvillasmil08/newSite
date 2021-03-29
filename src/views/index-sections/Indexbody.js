@@ -36,7 +36,8 @@ function Indexbody() {
         <div className='section'
         style={{backgroundImage:`url(${BackgroundImage})`,
                 backgroundRepeat: 'no-repeat',
-                backgroundColor: '#050b0b'
+                backgroundColor: '#050b0b',
+                color:'white'
                 }}>
 
 
@@ -63,7 +64,7 @@ function Indexbody() {
           <h1>Get ready to ride in saints crossing</h1>
         </Col>
         <Col className="text-center" lg="8" md="12">
-          <h5 className="description">
+          <h5>
             WildRP is a premiere roleplay community. We aim to bring an atmosphere of high quality roleplay that encourages in-depth character development while providing a wide range of features and constant updates.
             </h5>
           </Col>
@@ -92,7 +93,7 @@ function Indexbody() {
               </a>
             </Col>
             <Col className="text-center" lg="6" md="12">
-              <h5 className="description"><br></br>
+              <h5><br></br>
                 Our windows launcher is required to play WildRP. If the above image does not work you can use our
               <br></br>
               <a href='https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe' style={{color:'#e4b85d', textDecoration:'none'}}
@@ -102,7 +103,7 @@ function Indexbody() {
           <Row className="text-center mt-5">
             <Col className="ml-auto mr-auto" md="8">
               <h2>Discord</h2>
-              <h5 className="description">
+              <h5>
                 We organize our community primarily via Discord. All announcements, application status updates, developer previews, and other general communication can be found there.  
               </h5>
             </Col>

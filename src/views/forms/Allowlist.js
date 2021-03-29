@@ -129,7 +129,7 @@ function wordCounter(val){
                     <h3 style={{color:'white'}}>CHARACTER BACKGROUND</h3>
     
                         <Label for='charBackground'>Character Background</Label>
-                        <Input type='field' name='text' id='charBackground' onChange={(e) => wordCounter(e.target.value)} required />
+                        <Input type='textarea' name='text' id='charBackground' onChange={(e) => wordCounter(e.target.value)} required />
                 
                     <h3 style={{color:'white'}}>OTHER QUESTIONS</h3>
                     <Label for='media'>How did you hear about WildRP (Twitter, Twitch, Google, Facebook, Referral, etc.)</Label>
@@ -139,22 +139,22 @@ function wordCounter(val){
                         <Input type='field' name='text' id='threeChara' required />
 
                     <Label for="scenario">A sheriff, a criminal, and a civilian are all in one area. Please describe a scenario that you think would be unique, and entertaining for all three of these individuals to partake in simultaneously.</Label>
-                        <Input type='field' name='text' id='scenario' required />
+                        <Input type='textarea' name='text' id='scenario' required />
                     
                     <Label for="rpExp">Do you have past roleplay experience?</Label>
-                        <Input type='field' name='text' id='rpExp' required />
+                        <Input type='textarea' name='text' id='rpExp' required />
 
                     <Label for="rdm">What is RDM and can you provide and example.</Label>
-                        <Input type='field' name='text' id='rdm' required />
+                        <Input type='textarea' name='text' id='rdm' required />
                         
                     <Label for="ooc">When is acceptable to break character.</Label>
-                        <Input type='field' name='text' id='ooc' required />
+                        <Input type='textarea' name='text' id='ooc' required />
                         
                     <Label for="metagaming">What is the definition of Metagaming.</Label>
-                        <Input type='field' name='text' id='metagaming' required />
+                        <Input type='textarea' name='text' id='metagaming' required />
                     
                     <Label for="powers">If you could have two super powers and had to use them hand in hand, what woukd they be and why? Also, what would be your kryptonite?</Label>
-                        <Input type='field' name='text' id='powers' required />
+                        <Input type='textarea' name='text' id='powers' required />
 
 
                     

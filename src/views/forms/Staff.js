@@ -136,9 +136,7 @@ function Staffapp() {
                     </Button>
            </Col>
         </Container>
-        </div>
-
-          
+        </div>   
         </div>
         <DarkFooter />
     </div>
