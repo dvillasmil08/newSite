@@ -1765,10 +1765,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   border-radius: 30px !important;
   padding: 11px 23px; }
   .btn-round[class*="btn-outline-"] {
-    padding: 10px 22px; }
+    padding: 6px 15px; }
 
 [class*="btn-outline-"] {
-  border: 1px solid;
+  border: 2px solid;
   padding: 10px 22px;
   background-color: transparent; }
 
