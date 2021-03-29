@@ -34,7 +34,11 @@ function Devapp() {
       <div className="wrapper">
         {/* <LandingPageHeader /> */}
         <div className="main">
-        <div className="section" style={{color:'white', backgroundImage:`url(${BackgroundImage})`}}>
+        <div className="section" 
+        style={{backgroundImage:`url(${BackgroundImage})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: '#050b0b'
+        }}>
         <Container>
         <Col className="ml-auto mr-auto " md="12" style={{marginTop:'8rem'}}>
                 <h2 className="">DEVELOPER APPLICATION</h2>
@@ -68,13 +72,13 @@ function Devapp() {
                 <h3 className="" style={{color:'white'}}>QUESTION #2</h3>
                     <div>
                          <Label for='position'>Have you received any warnings or bans in WildRPs discord or game servers?</Label>
-                        <Input type='field' name='text' id='position' placeholder=''required />
+                        <Input type='textarea' name='text' id='position' placeholder=''required />
                     
                         <Label for='anyBan'>What experience do you have with coding and programming? Can you explain any previous projects you have worked on?</Label>
-                        <Input type='field' name='text' id='anyBan' placeholder='' required />
+                        <Input type='textarea' name='text' id='anyBan' placeholder='' required />
                         
-                        <Label for='why'>Why are you applyin for this developer position?</Label>
-                        <Input type='field' name='text' id='why' placeholder='' required />
+                        <Label for='why'>Why are you applying for this developer position?</Label>
+                        <Input type='textarea' name='text' id='why' placeholder='' required />
                         
                         <Label for='howLong'>What coding languages are you most comfortable with</Label>
                         <Input type='field' name='text' id='howLong' placeholder='' required />
@@ -83,10 +87,10 @@ function Devapp() {
                         <Input type='field' name='text' id='experience' placeholder='' required />
 
                         <Label for='weekhour'>Are you able to work well within a group setting?</Label>
-                        <Input type='field' name='text' id='weekhour' placeholder='' required />
+                        <Input type='textarea' name='text' id='weekhour' placeholder='' required />
 
                         <Label for='example'>Explain features or systems in short detail, that you would like to develop if given approval?</Label>
-                        <Input type='field' name='text' id='example' placeholder='' required />
+                        <Input type='textarea' name='text' id='example' placeholder='' required />
 
                     </div>
 
