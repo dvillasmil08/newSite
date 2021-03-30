@@ -90,31 +90,31 @@ function Staffapp() {
                 <h3 className="">QUESTION #2</h3>
                     <div>
                         <Label for='position'>What kind of position would you like to apply for?</Label>
-                        <Input type='field' name='text' id='position' placeholder=''required />
+                        <Input type='textarea' name='text' id='position' placeholder=''required />
                     
                         <Label for='anyBan'>Have you received any warnings or bans in WildRPs discord or game servers?</Label>
-                        <Input type='field' name='text' id='anyBan' placeholder='' required />
+                        <Input type='textarea' name='text' id='anyBan' placeholder='' required />
                         
                         <Label for='why'>Why are you applying for this staff position?</Label>
-                        <Input type='field' name='text' id='why' placeholder='' required />
+                        <Input type='textarea' name='text' id='why' placeholder='' required />
                         
                         <Label for='howLong'>How long have you been a member of the WildRP community?</Label>
-                        <Input type='field' name='text' id='howLong' placeholder='' required />
+                        <Input type='textarea' name='text' id='howLong' placeholder='' required />
 
                         <Label for='experience'>Explain your past experience with being a team leader, community moderator, etc</Label>
-                        <Input type='field' name='text' id='experience' placeholder='' required />
+                        <Input type='textarea' name='text' id='experience' placeholder='' required />
 
                         <Label for='weekhour'>How much time would you be able to volunteer per week</Label>
-                        <Input type='field' name='text' id='weekhour' placeholder='' required />
+                        <Input type='textarea' name='text' id='weekhour' placeholder='' required />
 
                         <Label for='yourvalue'>What value do you think you would provide to the WildRP community</Label>
-                        <Input type='field' name='text' id='yourvalue' placeholder='' required />
+                        <Input type='textarea' name='text' id='yourvalue' placeholder='' required />
 
                         <Label for='bring'>If you could change something about the WildRP community, what would it be</Label>
-                        <Input type='field' name='text' id='bring' placeholder='' required />
+                        <Input type='textarea' name='text' id='bring' placeholder='' required />
 
                         <Label for='comments'>Any other comments?</Label>
-                        <Input type='field' name='text' id='comments' placeholder='' required />
+                        <Input type='textarea' name='text' id='comments' placeholder='' required />
 
                     </div>
 
@@ -130,7 +130,7 @@ function Staffapp() {
                             outline
                             size="lg"
                             target="_blank"
-                            style={{color:'#e4b85d', fontSize:'20px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
+                            style={{color:'#e4b85d', fontSize:'20px', background:'transparent', height:'55px'}}
                             >Submit
                             <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button>

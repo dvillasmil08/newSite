@@ -91,28 +91,28 @@ function Law() {
                 
                 <div>
                         <Label for='position'>Do you have past Law Enforcement experience? If, for how long?</Label>
-                        <Input type='field' name='text' id='position' placeholder=''required />
+                        <Input type='textarea' name='text' id='position' placeholder=''required />
                     
                         <Label for='anyBan'>Do you have past LEO roleplay experience? If so, for how long?</Label>
-                        <Input type='field' name='text' id='anyBan' placeholder='' required />
+                        <Input type='textarea' name='text' id='anyBan' placeholder='' required />
                         
                         <Label for='why'>Why should your character be hired for Law Enforncement? Who might (in character) recommend you?</Label>
-                        <Input type='field' name='text' id='why' placeholder='' required />
+                        <Input type='textarea' name='text' id='why' placeholder='' required />
                         
                         <Label for='howLong'>Which LEO Role are you applying for? (Sheriff, Deputy)</Label>
                         <Input type='field' name='text' id='howLong' placeholder='' required />
 
                         <Label for='experience'>In your role, what tasks do you expect to perform? How capable is your character of performing these tasks?</Label>
-                        <Input type='field' name='text' id='experience' placeholder='' required />
+                        <Input type='textarea' name='text' id='experience' placeholder='' required />
 
                         <Label for='weekhour'>Do you plan on being corrupt in any way? If yes, what are your reasons for doing so?</Label>
-                        <Input type='field' name='text' id='weekhour' placeholder='' required />
+                        <Input type='textarea' name='text' id='weekhour' placeholder='' required />
 
                         <Label for='example'>You have shot down the neighborhood outlaw as he was getting rowdy in the saloon and drew his weapon. What are your next steps?</Label>
-                        <Input type='field' name='text' id='example' placeholder='' required />
+                        <Input type='textarea' name='text' id='example' placeholder='' required />
 
                         <Label for='example'>When is it appropiate for you, as an LEO of the server, to shoot another player with the intention to kill them?</Label>
-                        <Input type='field' name='text' id='example' placeholder='' required />
+                        <Input type='textarea' name='text' id='example' placeholder='' required />
 
                     </div>
 
@@ -140,7 +140,7 @@ function Law() {
                   outline
                   size="lg"
                   target="_blank"
-                  style={{color:'#e4b85d', fontSize:'20px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
+                  style={{color:'#e4b85d', fontSize:'20px', background:'transparent', height:'55px'}}
                   >Submit
                   <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='...'></img>
                   </Button>

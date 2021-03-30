@@ -69,6 +69,9 @@ function Indexbody() {
             </h5>
           </Col>
 
+              {/* empty separator */}
+              <div style={{marginBottom:'10rem'}}></div>
+
           <Col className="text-center" lg="8" md="12">
             <br></br>
             <Button
@@ -80,11 +83,15 @@ function Indexbody() {
               >Allowlist Application
               <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
             </Button>
+            
+            {/* empty separator */}
+            <div style={{marginBottom:'8rem'}}></div>
+
           </Col>
       </Row>
           <Row className="justify-content-md-center">
-            <Col className="text-center" lg="10">
-              <a href="https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe">
+            <Col className="text-center" lg="10" >
+              <a href="https://storage.googleapis.com/wildrp-launcher-downloads/WildRPLauncherSetup.exe" >
                 <img
                   alt="..."
                   className="img-raised"
@@ -100,6 +107,10 @@ function Indexbody() {
                 >alternative download link.</a></h5>
             </Col>
           </Row>
+
+          {/* empty separator */}
+          <div style={{marginBottom:'10rem'}}></div>
+
           <Row className="text-center mt-5">
             <Col className="ml-auto mr-auto" md="8">
               <h2>Discord</h2>
@@ -115,7 +126,7 @@ function Indexbody() {
               size="lg"
               target="_blank"
               style={{color:'#e4b85d', fontSize:'20px', marginBottom:'60px', background:'transparent', justifyContent:'center'}}
-              >Launch discord
+              >Launch Discord
               <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                   </Button>
               

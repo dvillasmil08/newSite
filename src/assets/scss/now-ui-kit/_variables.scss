@@ -100,8 +100,8 @@ $light-red:                  rgba($danger-color, .2);
 $padding-input-vertical:        11px !default;
 $padding-input-horizontal:      19px !default;
 
-$padding-btn-vertical:         11px !default;
-$padding-btn-horizontal:       22px !default;
+$padding-btn-vertical:         1px !default;
+$padding-btn-horizontal:       6px !default;
 
 $padding-base-vertical:        .5rem !default;
 $padding-base-horizontal:      .7rem !default;
@@ -129,7 +129,7 @@ $margin-base-vertical:         15px !default;
 $margin-base-horizontal:       15px !default;
 
 $margin-bottom:                 10px        !default;
-$border:                        1px solid   !default;
+$border:                        2px solid   !default;
 $border-radius-extra-small:     0.125rem    !default;
 $border-radius-small:           0.1875rem   !default;
 $border-radius-large:           0.25rem     !default;
