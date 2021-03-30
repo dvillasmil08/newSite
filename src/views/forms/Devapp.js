@@ -113,7 +113,7 @@ function Devapp() {
                             outline
                             size="lg"
                             target="_blank"
-                            style={{color:'#e4b85d', fontSize:'20px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
+                            style={{color:'#e4b85d', fontSize:'20px', background:'transparent', height:'55px'}}
                             >Submit
                             <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button>

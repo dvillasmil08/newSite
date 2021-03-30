@@ -75,7 +75,7 @@ function Reportplayer() {
                 
                     <div>
                          <Label for='brokenRule'>How did the player break the rules?</Label>
-                        <Input type='field' name='text' id='brokenRule' placeholder=''required />
+                        <Input type='textarea' name='text' id='brokenRule' placeholder=''required />
                     </div>
                     <div>
                         <Label for='reproBug'>Screenshots #1</Label>
@@ -100,7 +100,7 @@ function Reportplayer() {
                             outline
                             size="lg"
                             target="_blank"
-                            style={{color:'#e4b85d', fontSize:'20px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
+                            style={{color:'#e4b85d', fontSize:'20px', background:'transparent', height:'55px'}}
                           >Submit
                             <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button>
