@@ -181,7 +181,10 @@ function wordCounter(val){
                         outline
                         size="lg"
                         target="_blank"
-                        style={{color:'#e4b85d', fontSize:'20px', background:'transparent', height:'55px'}}
+
+                        style={{color:'#e4b85d', fontSize:'20px', marginTop:'110px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
+                        onclikc="sendMessage()"
+
                         >Submit
                         <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button> 
@@ -217,6 +220,10 @@ function wordCounter(val){
         <DarkFooter />
     </div>
     </div>
+
+
+
+
     </>
   );
 }
