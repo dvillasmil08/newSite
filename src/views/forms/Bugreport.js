@@ -71,11 +71,11 @@ function Bugreport() {
                
                     <div>
                          <Label for='bugDescription'>What is the bug? Please make sure you are as detailed as possible</Label>
-                        <Input type='textarea' name='text' id='bugDescription' placeholder=''required />
+                        <Input type='field' name='text' id='bugDescription' placeholder=''required />
                     </div>
                     <div>
                         <Label for='reproBug'>Steps to reproduce the bug</Label>
-                        <Input type='textarea' name='text' id='reproBug' placeholder='' required />
+                        <Input type='field' name='text' id='reproBug' placeholder='' required />
                     </div>
 
         </Col>
