@@ -16,11 +16,9 @@ import DarkFooter from "components/Footers/DarkFooter.js";
 import BackgroundImage from '../../assets/img/cover.jpg';
 import IndexNavbar from "components/Navbars/IndexNavbar";
 import Recaptcha from 'react-recaptcha';
-import { resolveProjectReferencePath } from "typescript";
 import ModalHeader from "reactstrap/lib/ModalHeader";
 import FormGroup from "reactstrap/lib/FormGroup";
-import {getPokemon} from './SendForm';
-import {sendMessage} from '../../components/DiscordHook'
+import {sendMessage} from '../../components/DiscordHook';
 
 
 
@@ -144,7 +142,7 @@ function submitForm(event){
 
             <Col
             className="ml-auto mr-auto " md="12">
-            <h3 className="" style={{color:'#bfc1c0'}}>GENERAL QUESTIONS</h3>
+            <h3 className="" style={{color:'white',marginTop:'3rem'}}>GENERAL QUESTIONS</h3>
                 {/* DISCORD */}
                 <div>
                     <Input 
@@ -191,23 +189,26 @@ function submitForm(event){
                     </Media>
                         <Media body>
                             <p style={{fontWeight:'bold'}}>WildRP has a set standard of roleplay that we expect from our whitelisted members.</p>
-                            <p>Please submit some sort of media that showcases your roleplaying ability. Here are a few examples:</p>
+                            <p>While not required, submitting media showcasing your roleplaying ability will greatly assist the staff team in evaluating your application. Here are a few examples:</p>
                             <p>- Voice Acting Reel</p>
                             <p>- Roleplaying Compilation Video</p>
                             <p>- Narration or Monologue</p>
                             <p>You may also submit links to other forms of media not listed. Twitch clips will be accepted, however please be sure they are concise and representative of your roleplay.
                              Please be creative when submitting your media.</p>
+
+                            <Label for='mediaLink'>Media Links</Label>
+                            <Input type='textarea' name='text' id='mediaLink' onChange={(e) => wordCounter(e.target.value)} required />
                     
                         </Media>
                         </Media>
 
-                    <h3 style={{color:'#bfc1c0'}}>CHARACTER BACKGROUND</h3>
+                    <h3 style={{color:'white', marginTop:'3rem'}}>CHARACTER BACKGROUND</h3>
     
                         <Label for='charBackground'>Character Background</Label>
                         <Input type='textarea' name='text' id='charBackground' onChange={(e) => wordCounter(e.target.value)} required />
                 
-                    <h3>OTHER QUESTIONS</h3>
-                    <Label for='media'>How did you hear about WildRP (Twitter, Twitch, Google, Facebook, Referral, etc.)</Label>
+                    <h3 style={{color:'white'}}>OTHER QUESTIONS</h3>
+                    <Label for='media' style={{fontSize:'1rem'}}>How did you hear about WildRP (Twitter, Twitch, Google, Facebook, Referral, etc.)</Label>
                         <Input type='field' name='text' id='media' required />
 
                     <Label for='mic'>What kind of microphone do you use?</Label>
@@ -243,7 +244,7 @@ function submitForm(event){
                     theme="dark"
                     />  
                         
-                    <div>
+                    <div style={{marginTop:'1rem'}}>
                         <h6>
                             By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.
                         </h6>
@@ -285,8 +286,8 @@ function submitForm(event){
                         </ModalFooter>   
                    </Modal>
                 </Col>
-                        </FormGroup>
-                        </Form>
+           </FormGroup>
+          </Form>
         </Container>
         </div>
         <DarkFooter />
