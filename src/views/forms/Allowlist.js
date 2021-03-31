@@ -255,10 +255,49 @@ function submitForm(event){
                         target="_blank"
                         style={{color:'#e4b85d', fontSize:'20px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
                         type='submit'
+                        onClick={() => setModal1(true)}
                         >Submit
                         <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button> 
                     
+
+                    
+                    <Modal isOpen={modal1} ontoggle={() => setModal1(false)} style={{color:'white'}}>
+                        <div style={{backgroundColor:'#050b0b'}}>
+                            
+                        </div>
+                        <ModalHeader className='justify-content-center' style={{backgroundColor:'#050b0b', color:'#e4b85d'}}>
+                            WE GOT THE TELEGRAM
+                        </ModalHeader>
+                        <ModalBody className='text-center' style={{backgroundColor:'#050b0b'}}>
+                          
+                            <p>
+                              We will be in touch via Discord
+                            </p>
+                        </ModalBody>
+                        <ModalFooter style={{backgroundColor:'#050b0b'}}>
+                        <Button
+                            tag='a'
+                            href='/'
+                            className="justify-content-end"
+                            onClick={() => setModal1(false)}
+                             style={{color:'#e4b85d', background:'transparent', textDecoration:'none'}}
+                            >Close
+                        </Button>
+                        </ModalFooter>   
+                   </Modal>
+
+
+
+
+
+
+
+
+
+
+
+
                         
                 </Media>
                 </Media>
