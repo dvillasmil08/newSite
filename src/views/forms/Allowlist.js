@@ -177,6 +177,7 @@ function wordCounter(val){
                     </Button> 
                     </div>
                     </Media>
+                    poop
                 </Media>
         </Col>
         </Container>
