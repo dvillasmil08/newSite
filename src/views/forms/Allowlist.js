@@ -102,9 +102,6 @@ function submitForm(event){
         sendMessage(params)
     }
 
-
-
-
   return (
     <>
       <IndexNavbar />
@@ -147,7 +144,7 @@ function submitForm(event){
 
             <Col
             className="ml-auto mr-auto " md="12">
-            <h3 className="" style={{color:'white'}}>GENERAL QUESTIONS</h3>
+            <h3 className="" style={{color:'#bfc1c0'}}>GENERAL QUESTIONS</h3>
                 {/* DISCORD */}
                 <div>
                     <Input 
@@ -187,7 +184,7 @@ function submitForm(event){
             
         
                 {/* SECOND PART */}
-                <Col className="ml-auto mr-auto " md="12">
+                <Col className="ml-auto mr-auto " md="12" style={{color:'#bfc1c0'}}>
                 <Media style={{padding:'15px', color:"white", border:'1px solid', borderColor:'#e4b85d', backgroundColor: 'rgba(129, 97, 35, 0.1)'}}>
                     <Media left>
                         <Media object src={require('../../assets/img/stamp.png')} style={{width:'50px', marginRight:'10px'}} atl='stamp'/>
@@ -201,12 +198,15 @@ function submitForm(event){
                             <p>You may also submit links to other forms of media not listed. Twitch clips will be accepted, however please be sure they are concise and representative of your roleplay.
                              Please be creative when submitting your media.</p>
                     
-                    <h3 style={{color:'white'}}>CHARACTER BACKGROUND</h3>
+                        </Media>
+                        </Media>
+
+                    <h3 style={{color:'#bfc1c0'}}>CHARACTER BACKGROUND</h3>
     
                         <Label for='charBackground'>Character Background</Label>
                         <Input type='textarea' name='text' id='charBackground' onChange={(e) => wordCounter(e.target.value)} required />
                 
-                    <h3 style={{color:'white'}}>OTHER QUESTIONS</h3>
+                    <h3>OTHER QUESTIONS</h3>
                     <Label for='media'>How did you hear about WildRP (Twitter, Twitch, Google, Facebook, Referral, etc.)</Label>
                         <Input type='field' name='text' id='media' required />
 
@@ -237,15 +237,16 @@ function submitForm(event){
                     <Label for="powers">If you could have two super powers and had to use them hand in hand, what woukd they be and why? Also, what would be your kryptonite?</Label>
                         <Input type='textarea' name='text' id='powers' required />
 
-
-                    
                     <Recaptcha
                     sitekey="6LfHY8QUAAAAANhkFVCaUI2gl9Te5phqd5VO6WEA"
                     render="explicit"
                     theme="dark"
                     />  
                         
-                    <div><h6>By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.</h6>
+                    <div>
+                        <h6>
+                            By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.
+                        </h6>
                     </div>
 
                     <Button 
@@ -259,9 +260,6 @@ function submitForm(event){
                         >Submit
                         <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button> 
-                    
-
-                    
                     <Modal isOpen={modal1} ontoggle={() => setModal1(false)} style={{color:'white'}}>
                         <div style={{backgroundColor:'#050b0b'}}>
                             
@@ -286,22 +284,7 @@ function submitForm(event){
                         </Button>
                         </ModalFooter>   
                    </Modal>
-
-
-
-
-
-
-
-
-
-
-
-
-                        
-                </Media>
-                </Media>
-        </Col>
+                </Col>
                         </FormGroup>
                         </Form>
         </Container>
