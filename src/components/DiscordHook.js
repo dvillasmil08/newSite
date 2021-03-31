@@ -1,14 +1,10 @@
 import react from "react"
 
-function sendMessage(){
-    const request = new XMLHttpRequest();
-    request.open("POST", 'https://discord.com/api/webhooks/826216402000150558/9IJSamfC_Q-8CW0lrNd6wefvFlhvviic46IGgyrjZaOunEb7mS9XKxjjJb-U4Ulye3qM')
-    request.setRequestHeader('Content-type', 'application/json');
+export function sendMessage(formData){
 
-    const params = {
-        username: 'Captain Hooker',
-        avatar_url:'',
-        content:'The message'
-    }
+    const request = new XMLHttpRequest();
+    request.open("POST", 'https://discord.com/api/webhooks/826627333133565963/JlttZ13p4mFq3VNgjOckWbqdHYN3BgFn0TP90A9JVJFKW52rWN6Tnv-I7Q6nRb8GVh3z')
+    request.setRequestHeader('Content-type', 'application/json');
+    
+    request.send(JSON.stringify(formData));
 }
-request.send(JSON.stringify(params));

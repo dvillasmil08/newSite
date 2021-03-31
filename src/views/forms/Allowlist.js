@@ -8,7 +8,7 @@ import {
   Col,
   Label, 
   Media, 
-  Modal, ModalBody, ModalFooter} from "reactstrap";
+  Modal, ModalBody, ModalFooter, Form} from "reactstrap";
 
 // core components
 // import LandingPageHeader from "components/Headers/LandingPageHeader.js";
@@ -18,6 +18,11 @@ import IndexNavbar from "components/Navbars/IndexNavbar";
 import Recaptcha from 'react-recaptcha';
 import { resolveProjectReferencePath } from "typescript";
 import ModalHeader from "reactstrap/lib/ModalHeader";
+import FormGroup from "reactstrap/lib/FormGroup";
+import {getPokemon} from './SendForm';
+import {sendMessage} from '../../components/DiscordHook'
+
+
 
 function Allowlist() {
   React.useEffect(() => {
@@ -39,6 +44,38 @@ function wordCounter(val){
     // submit modal
     const [modal1, setModal1] = React.useState(false);
     
+    // submit form to discord
+function submitForm(event){
+        event.preventDefault();
+        console.log(event.target.discordId.value)
+        const params = {
+            username: 'Allowlist Application',
+            avatar_url:'',
+            content:'text file should be here',
+            embeds:
+            [
+                {
+
+                fields:[
+                {
+                    name: 'Discord ID',
+                    value: event.target.discordId.value,
+                    inline: true
+                },
+                {
+                    name: 'Steam ID',
+                    value: event.target.steamId.value,
+                    inline: true 
+                } 
+                    ]
+                }
+            ]
+            
+        }
+        sendMessage(params)
+    }
+
+
 
 
   return (
@@ -77,7 +114,10 @@ function wordCounter(val){
                 </Media>
 
         </Col>
-        
+        <Form onSubmit={submitForm}>
+
+        <FormGroup>
+
             <Col
             className="ml-auto mr-auto " md="12">
             <h3 className="" style={{color:'white'}}>GENERAL QUESTIONS</h3>
@@ -176,13 +216,12 @@ function wordCounter(val){
                     </div>
 
                     <Button 
-                        onClick={() => setModal1(true)}
                         className="btn-round"
                         outline
                         size="lg"
                         target="_blank"
                         style={{color:'#e4b85d', fontSize:'20px', marginBottom:'60px', background:'transparent', height:'60px', justifyContent:'center'}}
-                        onclikc="sendMessage()"
+                        type='submit'
                         >Submit
                         <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button> 
@@ -190,6 +229,8 @@ function wordCounter(val){
                 </Media>
                 </Media>
         </Col>
+                        </FormGroup>
+                        </Form>
         </Container>
         </div>
         <DarkFooter />
