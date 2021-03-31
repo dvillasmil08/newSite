@@ -51,11 +51,13 @@ function submitForm(event){
         const params = {
             username: 'Allowlist Application',
             avatar_url:'',
-            content:'text file should be here',
+            content:'',
             embeds:
             [
                 {
-
+                    title: '**Allowlist Application**',
+                    description: 'If this message does not have reactions underneath, it will need to be reviewed by staff members. Please use attached file for submitted form values.',
+                    color: Math.floor(Math.random() * 16777214) + 1, 
                 fields:[
                 {
                     name: 'Discord ID',
@@ -66,7 +68,32 @@ function submitForm(event){
                     name: 'Steam ID',
                     value: event.target.steamId.value,
                     inline: true 
-                } 
+                }, 
+                {
+                    name: 'Twitch',
+                    value: event.target.twitchFacebook.value,
+                    inline: true 
+                },
+                {
+                    name: 'Mic',
+                    value: event.target.mic.value,
+                    inline: true 
+                },
+                {
+                    name: 'When is it okay to OOC',
+                    value: event.target.ooc.value,
+                    inline: true 
+                },
+                {
+                    name: 'What is RDM',
+                    value: event.target.rdm.value,
+                    inline: true 
+                },
+                {
+                    name: 'What is metagaming',
+                    value: event.target.metagaming.value,
+                    inline: true 
+                },
                     ]
                 }
             ]
@@ -183,6 +210,9 @@ function submitForm(event){
                     <Label for='media'>How did you hear about WildRP (Twitter, Twitch, Google, Facebook, Referral, etc.)</Label>
                         <Input type='field' name='text' id='media' required />
 
+                    <Label for='mic'>What kind of microphone do you use?</Label>
+                        <Input type='field' name='text' id='mic' required />
+
                     <Label for="threeChara">Name 3 one word characteristics of a good roleplayer.</Label>
                         <Input type='field' name='text' id='threeChara' required />
 
@@ -200,6 +230,9 @@ function submitForm(event){
                         
                     <Label for="metagaming">What is the definition of Metagaming.</Label>
                         <Input type='textarea' name='text' id='metagaming' required />
+
+                    <Label for="banHist">Have you ever been banned from a gaming community, if so, why?.</Label>
+                        <Input type='textarea' name='text' id='banHist' required />
                     
                     <Label for="powers">If you could have two super powers and had to use them hand in hand, what woukd they be and why? Also, what would be your kryptonite?</Label>
                         <Input type='textarea' name='text' id='powers' required />
@@ -225,6 +258,7 @@ function submitForm(event){
                         >Submit
                         <img style={{width:'40px', alignItems:'center'}} src={require('../../assets/img/wheel.svg')} alt='wheel'></img>
                     </Button> 
+                    
                         
                 </Media>
                 </Media>
