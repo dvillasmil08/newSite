@@ -80,7 +80,7 @@ function Banappeal() {
                
                     <div>
                         <Label for='appealReason'>Why you feel you should be unbanned</Label>
-                        <Input type='textarea' name='text' id='appealReason' placeholder=''required />
+                        <Input type='field' name='text' id='appealReason' placeholder=''required />
                     </div>
 
                     
