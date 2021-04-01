@@ -1,4 +1,5 @@
 import react from "react"
+import { createEmptyStatement } from "typescript";
 
 export function sendMessage(formData){
 
@@ -8,3 +9,4 @@ export function sendMessage(formData){
     
     request.send(JSON.stringify(formData));
 }
+
