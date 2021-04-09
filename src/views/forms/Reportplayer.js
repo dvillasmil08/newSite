@@ -10,7 +10,6 @@ import {
   Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
 
 // core components
-// import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import BackgroundImage from '../../assets/img/cover.jpg'
 import IndexNavbar from "components/Navbars/IndexNavbar";
@@ -36,7 +35,6 @@ const [modal1, setModal1] = React.useState(false);
     <>
       <IndexNavbar />
       <div className="wrapper">
-        {/* <LandingPageHeader /> */}
         <div className="main">
         <div className="section" style={{backgroundImage:`url(${BackgroundImage})`,
                 backgroundRepeat: 'no-repeat',
@@ -130,13 +128,9 @@ const [modal1, setModal1] = React.useState(false);
                         </Button>
                         </ModalFooter>   
                    </Modal>
-                    
-               
         </Col>
         </Container>
         </div>
-
-          
         </div>
         <DarkFooter />
     </div>

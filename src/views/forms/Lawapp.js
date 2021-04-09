@@ -10,7 +10,6 @@ import {
   Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
 
 // core components
-// import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import BackgroundImage from '../../assets/img/cover.jpg';
 import IndexNavbar from "components/Navbars/IndexNavbar";
@@ -35,7 +34,6 @@ const [modal1, setModal1] = React.useState(false);
     <>
       <IndexNavbar />
       <div className="wrapper">
-        {/* <LandingPageHeader /> */}
         <div className="main">
         <div className="section" 
           style={{backgroundImage:`url(${BackgroundImage})`,
@@ -117,9 +115,7 @@ const [modal1, setModal1] = React.useState(false);
                         <Label for='example'>When is it appropiate for you, as an LEO of the server, to shoot another player with the intention to kill them?</Label>
                         <Input type='textarea' name='text' id='example' placeholder='' required />
 
-                    </div>
-
-                    
+                    </div>     
                 
         </Col>
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}>
@@ -128,9 +124,6 @@ const [modal1, setModal1] = React.useState(false);
                     render="explicit"
                     theme="dark"
                     />  
-
-                    
-
                     <div>
                       <h6>By clicking on the form submission button you are hereby giving WildRP's staff team the consent to utilize any data contained within the form for the express purposes of WildRP community membership administration functions.</h6>
                     </div>

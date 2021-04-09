@@ -10,7 +10,6 @@ import {
   Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
 
 // core components
-// import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import BackgroundImage from '../../assets/img/cover.jpg'
 import IndexNavbar from "components/Navbars/IndexNavbar";
@@ -51,9 +50,6 @@ const [modal1, setModal1] = React.useState(false);
                 <p><a href='/index' style={{textDecoration:'none', color:'grey'}}>HOME / </a>
                 <span style={{color:'#e4b85d'}}>BUG REPORT</span></p>
                 </div>
-                
-
-                
                 <h4 className="description" style={{color:'white'}}>Please help us by taking a few minutes to fill out the form bellow if you have experienced a bug on one of our servers. Please make sure you fill out everything as in-depth as possible.</h4>
                 
           <h3 className="" style={{color:'white'}}>QUESTION #1.</h3>

@@ -11,7 +11,6 @@ import {
   Modal, ModalBody, ModalFooter, Form} from "reactstrap";
 
 // core components
-// import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import BackgroundImage from '../../assets/img/cover.jpg';
 import IndexNavbar from "components/Navbars/IndexNavbar";

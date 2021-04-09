@@ -4,7 +4,7 @@ import React from "react";
 import {
   Container,
   Col,
-Table} from "reactstrap";
+  Table} from "reactstrap";
 
 // core components
 import DarkFooter from "components/Footers/DarkFooter.js";

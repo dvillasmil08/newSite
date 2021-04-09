@@ -19,7 +19,6 @@ import Privacy from "views/forms/Privacy";
 
 
 ReactDOM.render(
-  // <BrowserRouter>
     
     <Router>
         <Switch>
@@ -42,6 +41,5 @@ ReactDOM.render(
         </Switch>
     </Router>
    
-  // </BrowserRouter>,
   ,document.getElementById("root")
 );

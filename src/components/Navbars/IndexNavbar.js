@@ -63,9 +63,6 @@ function IndexNavbar() {
               id="navbar-brand"
             >
             <img  alt="..." src={require("../../assets/img/logo-white.png")} width='100'></img>  
-            {/* <DropdownToggle nav className='dropbtn top-button-show'  style={{color:'#e4b85d', fontSize:'15px', textDecoration:'none'}}>
-              MENU
-          </DropdownToggle> */}
             </NavbarBrand>
       
           </div>
