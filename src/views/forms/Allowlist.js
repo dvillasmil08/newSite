@@ -50,9 +50,21 @@ function submitForm(event){
             username: 'Allowlist Application',
             avatar_url:'',
             content:'',
+            
+            // .txt file
+                file:[{
+                    name: 'Discord ID',
+                    value: event.target.discordId.value,
+                },
+                {    
+                    name: 'Steam ID',
+                    value: event.target.steamId.value,
+                }
+                ],
             embeds:
             [
                 {
+                    // embed snippet
                     title: '**Allowlist Application**',
                     description: 'If this message does not have reactions underneath, it will need to be reviewed by staff members. Please use attached file for submitted form values.',
                     color: Math.floor(Math.random() * 16777214) + 1, 
@@ -97,6 +109,9 @@ function submitForm(event){
             ]
             
         }
+        
+    
+        
         sendMessage(params)
     }
 
@@ -204,7 +219,7 @@ function submitForm(event){
 
                     <h3 style={{color:'white', marginTop:'3rem'}}>CHARACTER BACKGROUND</h3>
     
-                        <Label for='charBackground'>Character Background</Label>
+                    <Label for='charBackground'>Character Background</Label>
                         <Input type='textarea' name='text' id='charBackground' onChange={(e) => wordCounter(e.target.value)} required />
                 
                     <h3 style={{color:'white'}}>OTHER QUESTIONS</h3>
@@ -237,7 +252,7 @@ function submitForm(event){
                     
                     <Label for="powers">If you could have two super powers and had to use them hand in hand, what woukd they be and why? Also, what would be your kryptonite?</Label>
                         <Input type='textarea' name='text' id='powers' required />
-
+                        
                     <Recaptcha
                     sitekey="6LfHY8QUAAAAANhkFVCaUI2gl9Te5phqd5VO6WEA"
                     render="explicit"

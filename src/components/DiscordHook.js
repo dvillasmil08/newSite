@@ -1,5 +1,3 @@
-import react from "react"
-import { createEmptyStatement } from "typescript";
 
 export function sendMessage(formData){
 
