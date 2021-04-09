@@ -7,12 +7,9 @@ import {
 Table} from "reactstrap";
 
 // core components
-// import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import BackgroundImage from '../../assets/img/cover.jpg'
 import IndexNavbar from "components/Navbars/IndexNavbar";
-import Recaptcha from 'react-recaptcha';
-
 
 function Branding() {
   React.useEffect(() => {
@@ -49,13 +46,8 @@ function Branding() {
                
         </Col>
         
-            
-                
-        
         {/* SECOND PART */}
         <Col className="ml-auto mr-auto " md="12" style={{color:'white'}}><br></br>
-               
-                
                     <div>
                     {/* <p>Streamer Package<a href="/branding-dir/wildrp_streamer.zip">Download File</a></p> */}
                     <Table borderless className= 'justify-content-center'>
@@ -100,29 +92,11 @@ function Branding() {
                     </tr>
                   </tbody>
               </Table>
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    </div>
-    
-                    
+                    </div>         
                 
         </Col>
         </Container>
         </div>
-
-          
         </div>
         <DarkFooter />
     </div>

@@ -1,10 +1,6 @@
-//
 // Modals
-// Now Ui Kit Design element Dialogs
-// --------------------------------------------------
-.modal-content {
 
-//   border-radius: $border-radius-small;
+.modal-content {
   border: none;
   box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.5);
   // Modal header
@@ -30,7 +26,6 @@
     }
   }
   // Modal body
-  // Where all modal content resides (sibling of .modal-header and .modal-footer)
   .modal-body {
     padding-top:    24px;
     padding-right:  24px;
@@ -38,7 +33,7 @@
     padding-left:   24px;
     line-height: 1.9;
   }
-  // Footer (for actions)
+  // Footer
   .modal-footer {
     border-top: none;
     padding-right: 24px;

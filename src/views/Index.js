@@ -1,18 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-
-
-// reactstrap components
-// import {
-// } from "reactstrap";
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import IndexHeader from "components/Headers/IndexHeader.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 
 // sections for this page
-import Typography from "./index-sections/Typography.js";
 import Indexbody from "./index-sections/Indexbody.js";
 
 function Index() {
@@ -31,14 +23,7 @@ function Index() {
     <>
       <IndexNavbar />
       <div className="wrapper">
-        {/* <IndexHeader /> */}
           <Indexbody />
-        <div className="main">
-         
-   
-          {/* <Typography /> */}
-          
-        </div>
         <DarkFooter />
       </div>
     </>

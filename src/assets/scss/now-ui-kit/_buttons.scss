@@ -72,28 +72,7 @@
         }
 
     }
-
-    &:not(.btn-icon) .now-ui-icons{
-        position: relative;
-        top: 1px;
-    }
 }
-
-// Apply the mixin to the buttons
-// .btn-default { @include btn-styles($default-color, $default-states-color); }
-.btn-primary { @include btn-styles($primary-color, $primary-states-color); }
-.btn-success { @include btn-styles($success-color, $success-states-color); }
-.btn-info    { @include btn-styles($info-color, $info-states-color); }
-.btn-warning { @include btn-styles($warning-color, $warning-states-color); }
-.btn-danger  { @include btn-styles($danger-color, $danger-states-color); }
-.btn-neutral { @include btn-styles($white-color, $white-color); }
-
-.btn-outline-primary { @include outline-buttons($primary-color, $primary-states-color); }
-.btn-outline-success { @include outline-buttons($success-color, $success-states-color); }
-.btn-outline-info    { @include outline-buttons($info-color, $info-states-color); }
-.btn-outline-warning { @include outline-buttons($warning-color, $warning-states-color); }
-.btn-outline-danger  { @include outline-buttons($danger-color, $danger-states-color); }
-.btn-outline-default { @include outline-buttons($default-color, $default-states-color); }
 
 .btn-round{
     border-width: $border-thin;
@@ -132,77 +111,4 @@
 }
 .btn-sm{
     @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-base, $border-radius-small);
-}
-
-.btn-link{
-    border: $none;
-    padding: $padding-base-vertical $padding-base-horizontal;
-    background-color: $transparent-bg;
-}
-
-.btn-wd {
-    min-width: 140px;
-}
-.btn-group.select{
-    width: 100%;
-}
-.btn-group.select .btn{
-    text-align: left;
-}
-.btn-group.select .caret{
-    position: absolute;
-    top: 50%;
-    margin-top: -1px;
-    right: 8px;
-}
-
-.btn-facebook {
-  &,
-  &:hover,
-  &focus,
-  &:active,
-  &:active:focus {
-    color: $social-facebook !important;
-  }
-}
-
-.btn-twitter {
-
-  &,
-  &:hover,
-  &focus,
-  &:active,
-  &:active:focus {
-    color: $social-twitter !important;
-  }
-}
-
-.btn-google {
-  &,
-  &:hover,
-  &focus,
-  &:active,
-  &:active:focus {
-    color: $social-google !important;
-  }
-}
-
-.btn-github {
-  &,
-  &:hover,
-  &focus,
-  &:active,
-  &:active:focus {
-    color: $social-github !important;
-  }
-}
-
-.btn-linkedin {
-  &,
-  &:hover,
-  &focus,
-  &:active,
-  &:active:focus {
-    color: $social-linkedin !important;
-  }
 }

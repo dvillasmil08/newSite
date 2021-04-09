@@ -5,12 +5,6 @@
     @include transition($fast-transition-time, $transition-linear);
     font-size: $font-size-base;
 
-    &.dropdown-menu-right{
-        &:before{
-            left:auto;
-            right: 10px;
-        }
-    }
 
     .dropdown &{
         @include transform-translate-y-dropdown(-25px);
@@ -29,13 +23,6 @@
 
     .dropdown-item,
     .bootstrap-select &.inner li a{
-      font-size: $font-size-small;
-      padding-top: .6rem;
-      padding-bottom: .6rem;
-      margin-top: 5px;
-      @include transition($fast-transition-time, $transition-linear);
-      outline: none;
-
       &:hover,
       &:focus{
         background-color: $opacity-gray-3;
@@ -62,7 +49,7 @@
         top: -5px;
         left: 10px;
         right: auto;
-        color: $white-color;
+        color:#000000;
         border-bottom: .4em solid;
         border-right: .4em solid transparent;
         border-left: .4em solid transparent;
@@ -70,46 +57,5 @@
 
     .dropdown-divider{
         background-color: #000000;
-    }
-
-    .dropdown-header:not([href]):not([tabindex]){
-        color: $default-color-opacity;
-        font-size: $font-size-mini;
-        text-transform: uppercase;
-        font-weight: $font-weight-bold;
-    }
-
-    &.dropdown-primary{
-        @include dropdown-colors(darken($primary-color, 3%),$opacity-8,$white-color, $opacity-2);
-    }
-
-    &.dropdown-info{
-        @include dropdown-colors(darken($info-color, 3%),$opacity-8,$white-color, $opacity-2);
-    }
-
-    &.dropdown-danger{
-        @include dropdown-colors(darken($danger-color, 3%),$opacity-8,$white-color, $opacity-2);
-    }
-
-    &.dropdown-success{
-        @include dropdown-colors(darken($success-color, 3%),$opacity-8,$white-color, $opacity-2);
-    }
-
-    &.dropdown-warning{
-        @include dropdown-colors(darken($warning-color, 3%),$opacity-8,$white-color, $opacity-2);
-    }
-}
-.button-dropdown{
-    padding-right: $padding-base-horizontal;
-    cursor: pointer;
-
-    & .dropdown-toggle{
-        padding-top: $padding-base-vertical;
-        padding-bottom: $padding-base-vertical;
-        display: block;
-
-        &:after{
-            display: none;
-        }
     }
 }

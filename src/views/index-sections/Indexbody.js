@@ -4,7 +4,6 @@ import React from "react";
 // reactstrap components
 import { Button, 
   Container, 
-  UncontrolledTooltip,
   Row,
   Col,
  } from "reactstrap";

@@ -86,27 +86,6 @@
             }
         }
     }
-
-    .section-images{
-        height: 500px;
-        max-height: 500px;
-
-        .hero-images-container{
-            max-width: 500px;
-        }
-
-        .hero-images-container-1{
-            right: 10%;
-            top: 68%;
-            max-width: 269px;
-        }
-
-        .hero-images-container-2{
-            right: 5%;
-            max-width: 135px;
-            top: 93%;
-        }
-    }
 }
 
 @media screen and (min-width: 992px){
